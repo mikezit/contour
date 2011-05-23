@@ -1,0 +1,168 @@
+<ui version="4.0" >
+ <class>CFrame</class>
+ <widget class="QWidget" name="CFrame" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>731</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" >
+   <item>
+    <layout class="QGridLayout" name="gridLayout" >
+     <item row="0" column="0" >
+      <widget class="Coordinate" name="ycoordinate" >
+       <property name="minimumSize" >
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="ContourView" name="view" />
+     </item>
+     <item rowspan="2" row="0" column="2" >
+      <widget class="QScrollBar" name="verticalScrollBar" >
+       <property name="maximumSize" >
+        <size>
+         <width>12</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" >
+      <widget class="ColorRuler" name="colorFrame" >
+       <property name="minimumSize" >
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <widget class="Coordinate" name="xcoordinate" >
+       <property name="minimumSize" >
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>16777215</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2" >
+      <widget class="QScrollBar" name="horizontalScrollBar" >
+       <property name="maximumSize" >
+        <size>
+         <width>16777215</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="1" column="3" >
+      <widget class="QFrame" name="labelFrame" >
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="iLabel" >
+        <property name="geometry" >
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>59</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text" >
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="jLabel" >
+        <property name="geometry" >
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>59</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text" >
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="zLabel" >
+        <property name="geometry" >
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>59</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text" >
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ContourView</class>
+   <extends>QGraphicsView</extends>
+   <header>contourview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Coordinate</class>
+   <extends>QGraphicsView</extends>
+   <header>coordinate.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ColorRuler</class>
+   <extends>QFrame</extends>
+   <header>./dialog/colorruler.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,85 @@
+#ifndef COLORMAPEDIT_H
+#define COLORMAPEDIT_H
+
+#include <QDialog>
+#include <QLinkedList>
+#include <QList>
+#include <QColor>
+#include "../ui_colormapedit.h"
+#include "../../color/colormap.h"
+
+class  ColormapEdit : public QDialog ,public Ui::colormapEdit
+{
+	Q_OBJECT
+
+public:
+	ColormapEdit(QWidget *parent = 0);
+	~ColormapEdit();
+	void setColorList(QList<QColor> colors);
+
+	void setColorList(Rgb* colors)
+	{
+	     QList<QColor> qcolors;
+	     for(int i=0;i<32;i++)
+		  qcolors<<QColor(colors[i].red(),colors[i].green(),colors[i].blue());
+	     setColorList(qcolors);
+	}
+
+signals:
+	void newColorList(QList<QColor> colors);
+
+private slots:
+	/*‘½«‘ÑÕ‘É«‘±í‘½ø‘ÐÐ‘Ñ­‘»·‘Ðý‘×ª,‘¾Í‘ÊÇ‘°Ñ‘ÏÖ‘ÔÚ‘µÄ‘µÚ‘Ò»‘¸ö‘ÑÕ‘É«‘ÒÀ‘´Î‘·Å‘µ½‘µÚi‘¸ö‘ÑÕ‘É«‘ÖÐ‘È¥*/
+	void rotate(int n);	
+
+	/*‘ÑÕ‘É«‘´Ó‘Á½‘±ß‘Ïò‘ÖÐ‘¼ä‘Ñ¹‘Ëõ*/
+	void bias(int n);
+
+	/*‘ÑÕ‘É«‘´Ó‘ÖÐ‘¼ä‘Ïò‘Á½‘±ß‘À©‘Õ¹*/
+	void contrast(int n);
+	
+	/*‘Éè‘ÖÃ‘Ä³‘¸ö‘Î»‘ÖÃ‘µÄ‘ÑÕ‘É«*/
+	void setColor();
+
+	void okPressed();
+
+	void applyPressed();
+
+	void biasReset()
+	{
+		biasSlider->setValue(0);
+	}
+	void rotateReset()
+	{
+		rotateSlider->setValue(0);
+	}
+	void contrastRest()
+	{
+		contrastSlider->setValue(0);
+	}
+
+	/*‘ÖØ‘ÐÂ‘ÏÔ‘Ê¾colorMap‘µÄ‘ÑÕ‘É«*/
+	void updateColormap();
+
+	void resetMap(int index);
+
+private:
+	/*‘µÃ‘µ½‘Ò»‘¸ö‘ÑÕ‘É«‘Îªcolor‘µÄ‘Ïñ‘ËØ‘Í¼*/
+	QPixmap getPixmap(QColor color,int width,int height,int number);
+
+	/*‘µÃ‘µ½‘Ò»‘¸ö‘ÑÕ‘É«‘Ìõ‘µÄ‘Ïñ‘ËØ‘Í¼ */
+	QPixmap getPixmap(Rgb *colors,int width,int height);
+	
+	/*‘µ±‘Ç°‘µÄ‘ÑÕ‘É«‘±í‘£¬‘ÓÃ‘ÓÚ‘ÓÃ‘»§‘ÔÝ‘Ê±‘±à‘¼­*/
+	QList<QColor> colors;
+
+	/*‘¼Ç‘Â¼‘Ç°‘Ò»‘´Î‘ÑÕ‘É«‘±í‘½ø‘ÐÐ‘Ñ­‘»·‘Ðý‘×ª‘µÄ‘Öµ*/
+	int lastRotate;
+	int lastBias;
+
+	bool rotated,biased,contrasted;
+
+};
+
+
+#endif // COLORMAPEDIT_H

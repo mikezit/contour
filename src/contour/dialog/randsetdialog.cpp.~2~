@@ -1,0 +1,12 @@
+#include "randsetdialog.h"
+
+RandSetDialog::RandSetDialog()
+     :QDialog()
+{
+
+}
+
+RandSetDialog::~RandSetDialog()
+{
+
+}

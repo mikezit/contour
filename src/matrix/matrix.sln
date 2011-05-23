@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matrixa", "matrix.vcproj", "{98628EA3-BFD6-437C-96E3-677D87502F87}"
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98628EA3-BFD6-437C-96E3-677D87502F87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{98628EA3-BFD6-437C-96E3-677D87502F87}.Debug|Win32.Build.0 = Debug|Win32
+		{98628EA3-BFD6-437C-96E3-677D87502F87}.Release|Win32.ActiveCfg = Release|Win32
+		{98628EA3-BFD6-437C-96E3-677D87502F87}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

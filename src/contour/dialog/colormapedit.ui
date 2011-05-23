@@ -1,0 +1,705 @@
+<ui version="4.0" >
+ <class>colormapEdit</class>
+ <widget class="QDialog" name="colormapEdit" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>421</width>
+    <height>508</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>colormapedit</string>
+  </property>
+  <widget class="ColorFrame" name="colorFrame" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>321</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Sunken</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_1" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_2" >
+   <property name="geometry" >
+    <rect>
+     <x>60</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_3" >
+   <property name="geometry" >
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_4" >
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_5" >
+   <property name="geometry" >
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_6" >
+   <property name="geometry" >
+    <rect>
+     <x>220</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_7" >
+   <property name="geometry" >
+    <rect>
+     <x>260</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_8" >
+   <property name="geometry" >
+    <rect>
+     <x>300</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_9" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_10" >
+   <property name="geometry" >
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_11" >
+   <property name="geometry" >
+    <rect>
+     <x>100</x>
+     <y>120</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_12" >
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>120</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_13" >
+   <property name="geometry" >
+    <rect>
+     <x>180</x>
+     <y>120</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_14" >
+   <property name="geometry" >
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_15" >
+   <property name="geometry" >
+    <rect>
+     <x>260</x>
+     <y>120</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_16" >
+   <property name="geometry" >
+    <rect>
+     <x>300</x>
+     <y>120</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_17" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_18" >
+   <property name="geometry" >
+    <rect>
+     <x>60</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_19" >
+   <property name="geometry" >
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_20" >
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_21" >
+   <property name="geometry" >
+    <rect>
+     <x>180</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_22" >
+   <property name="geometry" >
+    <rect>
+     <x>220</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_23" >
+   <property name="geometry" >
+    <rect>
+     <x>260</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_24" >
+   <property name="geometry" >
+    <rect>
+     <x>300</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_25" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_26" >
+   <property name="geometry" >
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_27" >
+   <property name="geometry" >
+    <rect>
+     <x>100</x>
+     <y>200</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_28" >
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>200</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_29" >
+   <property name="geometry" >
+    <rect>
+     <x>180</x>
+     <y>200</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_30" >
+   <property name="geometry" >
+    <rect>
+     <x>220</x>
+     <y>200</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_31" >
+   <property name="geometry" >
+    <rect>
+     <x>260</x>
+     <y>200</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_32" >
+   <property name="geometry" >
+    <rect>
+     <x>300</x>
+     <y>200</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSlider" name="rotateSlider" >
+   <property name="geometry" >
+    <rect>
+     <x>80</x>
+     <y>336</y>
+     <width>224</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>18</x>
+     <y>332</y>
+     <width>56</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Rotate</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="applyButton" >
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>440</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton" >
+   <property name="geometry" >
+    <rect>
+     <x>260</x>
+     <y>440</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2" >
+   <property name="geometry" >
+    <rect>
+     <x>18</x>
+     <y>366</y>
+     <width>56</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Bias</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QSlider" name="biasSlider" >
+   <property name="geometry" >
+    <rect>
+     <x>80</x>
+     <y>370</y>
+     <width>224</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3" >
+   <property name="geometry" >
+    <rect>
+     <x>18</x>
+     <y>400</y>
+     <width>56</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Contrast</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QSlider" name="contrastSlider" >
+   <property name="geometry" >
+    <rect>
+     <x>80</x>
+     <y>404</y>
+     <width>224</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="colorNumberButton" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>131</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Show Color Numbers</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rotateResetButton" >
+   <property name="geometry" >
+    <rect>
+     <x>310</x>
+     <y>332</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Reset</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="biasResetButton" >
+   <property name="geometry" >
+    <rect>
+     <x>310</x>
+     <y>366</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Reset</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="contrastRestButton" >
+   <property name="geometry" >
+    <rect>
+     <x>310</x>
+     <y>400</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Reset</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="dynamicButton" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>121</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Dynamic Adjust</string>
+   </property>
+   <property name="autoExclusive" >
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Map Color:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="mapBox" >
+   <property name="geometry" >
+    <rect>
+     <x>90</x>
+     <y>250</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>ColorFrame</class>
+   <extends>QFrame</extends>
+   <header>dialog/colorruler.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

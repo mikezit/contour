@@ -1,0 +1,193 @@
+#ifndef CONTOURSTRUCT_H
+#define CONTOURSTRUCT_H
+
+#include <QPoint>
+#include <cassert>
+#include <cmath>
+#include "../matrix/matrix.h"
+#include <QVector>
+#include <cstdlib>
+#include <QDebug>
+
+
+
+#define SCENEWIDTH 800
+#define SCENEHEIGHT 800
+
+#ifdef WIN32
+#define INTERPOSE_NUM 20
+#else
+#define INTERPOSE_NUM 20
+#endif
+
+
+struct CGridDataInfo
+{
+     int rows;
+     int cols;
+     float xMin;
+     float xMax;
+     float yMin;
+     float yMax;
+     float zMin;
+     float zMax;
+
+     CGridDataInfo(){memset(this,0,sizeof(CGridDataInfo));}
+};
+
+
+struct GridData
+{
+     Matrix *data;
+     CGridDataInfo info;
+
+     GridData(){
+	  data = NULL;
+     }
+};
+
+
+
+class CCurve
+{
+public:
+     /* A:一边型，B:角型,C:跨边型,D:内环型 */
+     enum Type{A,B,C,D,U};
+     enum SType{Down,Top,Left,Right};
+     enum Corner{topLeft,topRight,bottomLeft,bottomRight};
+
+     QVector<QPointF>  data;
+     float value;
+     float xMin;
+     float xMax;
+     float yMin;
+     float yMax;
+     Type type;
+     SType stype;
+
+     CCurve(){
+	  xMin = yMin =1000;
+	  xMax = yMax = -1000;
+     }
+
+     /* 0:topLeft,1:topRight,2,bottomLeft,3bottomRight*/
+     Corner getCorner() const
+     {
+	  if(type != CCurve::A)
+	       assert("wrong");
+	  const QPointF *last = &(data[data.count()-1]);
+	  if(stype == CCurve::Top)
+	  {
+	       if(last->x() <=0.0001)
+		    return topLeft;
+	       else 
+		    return topRight;
+	  }
+	  else if(stype == CCurve::Down)
+	  {
+	       if(last->x() <=0.0001)
+		    return bottomLeft;
+	       else 
+		    return  bottomRight;
+
+	  }
+	  else if(stype == CCurve::Left)
+	  {
+	       if(last->y()<=0.0001)
+		    return topLeft;
+	       else 
+		    return bottomLeft;
+	  }
+	  else if(stype == CCurve::Right)
+	  {
+	       if(last->y()<=0.0001)
+		    return topRight;
+	       else 
+		    return bottomRight;
+	  }
+     }
+
+     qreal getCurveWidth() const
+     {
+	  if(type == CCurve::B)
+	  {
+	       const QPointF *first,*last;
+	       first = &(data[0]);
+	       last = &(data[data.count()-1]);
+	       //Corner cor = getCorner();
+	       if(stype == CCurve::Top)
+	       {
+		    if(last->x() <= 0.001)
+			 return last->y() +first->x();
+		    else 
+			 return last->y() + SCENEWIDTH - first->x();
+	       }
+	       else if(stype == CCurve::Down)
+	       {
+		    if(last->x() <= 0.001)
+			 return  SCENEHEIGHT - last->y() + first->x();
+		    else 
+			 return  SCENEHEIGHT - last->y() + SCENEWIDTH - first->x();
+
+	       }
+	       else if(stype == CCurve::Left)
+	       {
+		    if(last->y() <= 0.001)
+			 return first->y()+ last->x();
+		    else 
+			 return last->x() + SCENEHEIGHT -first->y() ;
+	       }
+	       else if(stype == CCurve::Right)
+	       {
+		    if(last->y() <= 0.001)
+			 return SCENEWIDTH - last->x()+first->y();
+		    else 
+			 return SCENEWIDTH - last->x() + SCENEHEIGHT -first->y() ;
+	       }
+	  }
+
+	  else if(type == CCurve::A)
+	  {
+	       if(stype == CCurve::Top || stype == CCurve::Down)
+	       {
+		    return fabs(data[data.count()-1].x() - data[0].x());
+	       }
+
+	       else if(stype == CCurve::Left||stype == CCurve::Right)
+	       {
+		    return fabs(data[data.count()-1].y() - data[0].y());
+	       }
+	  }
+	  else {
+	       assert("error");
+	  }
+     }
+
+};
+
+//等值线曲线链表(给定某值的等值线不限于一条)
+typedef QVector<CCurve*> CCurveList; 
+
+
+class ConversePos
+{
+public:
+     static  QPointF pos2scene(float x,float y,CGridDataInfo *info)
+     {
+	  //float sx =  (x-info->xMin)/(info->xMax - info->xMin)*SCENEWIDTH;
+	  //float sy = SCENEHEIGHT - (y-info->yMin)/(info->yMax - info->yMin)*SCENEHEIGHT;
+	  //assert( sx>=0&&sx<=SCENEWIDTH);
+	  //assert(sy>=0&&sy<=SCENEHEIGHT);
+	  return QPointF( (x-info->xMin)/(info->xMax - info->xMin)*SCENEWIDTH,
+			  SCENEHEIGHT - (y-info->yMin)/(info->yMax - info->yMin)*SCENEHEIGHT);
+     }
+
+     static  QPointF pos2scene(QPointF pos,CGridDataInfo *info)
+     {
+	  return pos2scene(pos.x(),pos.y(),info);
+     }
+
+};
+
+
+#endif

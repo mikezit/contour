@@ -1,0 +1,1041 @@
+[ebrowse-hs "ebrowse 5.0" " -x" () ()][ebrowse-ts [ebrowse-cs "ContourTracer" () 0"contourtracer.h" "class ContourTracer
+{" 174"contourtracer.cpp" ]
+()([ebrowse-ms "deltX" () 0 () "    float deltX;" 1703 2  () () 0]
+[ebrowse-ms "deltY" () 0 () "    float deltY;" 1721 2  () () 0]
+[ebrowse-ms "dx" () 0 () "    float dx;" 1736 2  () () 0]
+[ebrowse-ms "dy" () 0 () "    float dy;" 1751 2  () () 0]
+[ebrowse-ms "m_currentCurveLine" () 0 () "    CCurve*     m_currentCurveLine;" 1970 2  () () 0]
+[ebrowse-ms "m_gridDataInfo" () 0 () "    CGridDataInfo m_gridDataInfo;" 1569 2  () () 0]
+[ebrowse-ms "m_pCurveList" () 0 () "    CCurveList*  m_pCurveList;" 1863 2  () () 0]
+[ebrowse-ms "m_ppGridData" () 0 () "    Matrix        m_ppGridData;" 1618 2  () () 0]
+[ebrowse-ms "m_valueTracing" () 0 () "    float         m_valueTracing;" 1667 2  () () 0]
+[ebrowse-ms "needAllocate" () 0 () "    bool needAllocate;" 1775 2  () () 0]
+[ebrowse-ms "startPoint" () 0 () "previousPoint,currentPoint,nextPoint,startPoint;" 613 2  () () 0]
+[ebrowse-ms "xSide" () 0 () "    float **xSide;" 636 2  () () 0]
+[ebrowse-ms "ySide" () 0 () "    float **ySide;" 656 2  () () 0]
+)
+([ebrowse-ms "ContourTracer" () 0 () "    ContourTracer(const ContourTracer& rhs);" 2032 2  () () 0]
+[ebrowse-ms "ContourTracer" () 0 () "    ContourTracer();" 206 0  () "ContourTracer::ContourTracer()
+{" 135]
+[ebrowse-ms "allocateMemory" () 0 () "    void allocateMemory()" 809 2  () "void ContourTracer::allocateMemory()" 767]
+[ebrowse-ms "calcAndSaveOnePointCoord" () 0 () "    void calcAndSaveOnePointCoord(int" 1247 2  () "void ContourTracer::calcAndSaveOnePointCoord(int" 3319]
+[ebrowse-ms "executeTracing" () 0 () "    bool executeTracing(float" 400 0  () "bool ContourTracer::executeTracing(float" 382]
+[ebrowse-ms "freeMemory" () 0 () "    void freeMemory()" 833 2  () "void ContourTracer::freeMemory()" 1109]
+[ebrowse-ms "fromBottom2TopTracing" () 0 () "    void fromBottom2TopTracing()" 993 2  () "void ContourTracer::fromBottom2TopTracing()" 5203]
+[ebrowse-ms "fromLeft2RightTracing" () 0 () "    void fromLeft2RightTracing()" 1028 2  () "void ContourTracer::fromLeft2RightTracing()" 6678]
+[ebrowse-ms "fromRight2LeftTracing" () 0 () "    void fromRight2LeftTracing()" 1098 2  () "void ContourTracer::fromRight2LeftTracing()" 9713]
+[ebrowse-ms "fromTop2BottomTracing" () 0 () "    void fromTop2BottomTracing()" 1063 2  () "void ContourTracer::fromTop2BottomTracing()" 8169]
+[ebrowse-ms "getCurveType" () 2 () "    CCurve::Type getCurveType(const" 708 2  "contourtracer.h" "e CCurve::Type ContourTracer::getCurveType(const" 3157]
+[ebrowse-ms "handlingAfterNextPointFounded" () 0 () "    void handlingAfterNextPointFounded(int" 1147 2  () "ContourTracer::handlingAfterNextPointFounded(int" 4066]
+[ebrowse-ms "interpolateTracingValue" () 0 () "    void interpolateTracingValue()" 870 2  () "void ContourTracer::interpolateTracingValue()" 1377]
+[ebrowse-ms "isHavingPoint" () 2 () "    bool isHavingPoint(float" 776 2  "contourtracer.h" "inline bool ContourTracer::isHavingPoint(float" 2897]
+[ebrowse-ms "operator =" () 0 () "    ContourTracer& operator=(const" 2107 2  () () 0]
+[ebrowse-ms "setGridDataInfo" () 2 () "    void setGridDataInfo(CGridDataInfo" 272 0  "contourtracer.h" "oid ContourTracer::setGridDataInfo(CGridDataInfo" 2462]
+[ebrowse-ms "setInput" () 2 () "    void setInput(Matrix" 310 0  "contourtracer.h" "inline void ContourTracer::setInput(Matrix" 2199]
+[ebrowse-ms "setOutput" () 2 () "    void setOutput(CCurveList" 355 0  "contourtracer.h" "inline void ContourTracer::setOutput(CCurveList" 2302]
+[ebrowse-ms "tracingClosedContour" () 0 () "    void tracingClosedContour()" 1500 2  () "void ContourTracer::tracingClosedContour()" 15138]
+[ebrowse-ms "tracingNextPoint" () 0 () "    void tracingNextPoint()" 935 2  () "void ContourTracer::tracingNextPoint()" 4531]
+[ebrowse-ms "tracingNonClosedContour" () 0 () "    void tracingNonClosedContour()" 1417 2  () "void ContourTracer::tracingNonClosedContour()" 13225]
+[ebrowse-ms "tracingOneClosedContour" () 0 () "    void tracingOneClosedContour(int" 1456 2  () "void ContourTracer::tracingOneClosedContour(int" 15634]
+[ebrowse-ms "tracingOneNonClosedContour" () 0 () "    void tracingOneNonClosedContour(CCurve" 1367 2  () "ContourTracer::tracingOneNonClosedContour(CCurve" 11232]
+[ebrowse-ms "~ContourTracer" () 0 () "    ~ContourTracer()" 229 0  () "ContourTracer::~ContourTracer()" 307]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_HelpDialog" "Ui" 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "HelpDialog" "Ui" 0"ui_helpdialog.h" "    class HelpDialog:" 3802() ]
+()()
+()
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_HelpDialog" () 0"ui_helpdialog.h" "class Ui_HelpDialog
+{" 678"ui_helpdialog.h" ]
+()([ebrowse-ms "htmlButton" () 0 () "    QPushButton *htmlButton;" 797 0  () () 0]
+[ebrowse-ms "label" () 0 () "    QLabel *label;" 705 0  () () 0]
+[ebrowse-ms "label_2" () 0 () "    QLabel *label_2;" 726 0  () () 0]
+[ebrowse-ms "label_3" () 0 () "    QLabel *label_3;" 747 0  () () 0]
+[ebrowse-ms "label_4" () 0 () "    QLabel *label_4;" 768 0  () () 0]
+[ebrowse-ms "pushButton_2" () 0 () "    QPushButton *pushButton_2;" 828 0  () () 0]
+)
+([ebrowse-ms "retranslateUi" () 0 () "    void retranslateUi(QDialog" 2557 0  () "    void retranslateUi(QDialog" 2557]
+[ebrowse-ms "setupUi" () 0 () "    void setupUi(QDialog" 854 0  () "    void setupUi(QDialog" 854]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "ColormapEdit" () 0() () 0"moc_colormapedit.cpp" ]
+()([ebrowse-ms "staticMetaObject" () 0 () () 0 0  () "      qt_meta_data_ColormapEdit, 0 }
+};" 2009]
+)
+([ebrowse-ms "metaObject" () 4 () () 0 0  () "const QMetaObject *ColormapEdit::metaObject()" 2056]
+[ebrowse-ms "newColorList" () 0 () () 0 0  () "void ColormapEdit::newColorList(QList" 3435]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  () "int ColormapEdit::qt_metacall(QMetaObject" 2523]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  () "void *ColormapEdit::qt_metacast(const" 2135]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_TracingDialog" "Ui" 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "TracingDialog" "Ui" 0"ui_trace.h" "    class TracingDialog:" 7051() ]
+()()
+()
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_TracingDialog" () 0"ui_trace.h" "class Ui_TracingDialog
+{" 892"ui_trace.h" ]
+()([ebrowse-ms "addButton" () 0 () "    QPushButton *addButton;" 1254 0  () () 0]
+[ebrowse-ms "cancelButton" () 0 () "    QPushButton *cancelButton;" 1465 0  () () 0]
+[ebrowse-ms "cleanButton" () 0 () "    QPushButton *cleanButton;" 1526 0  () () 0]
+[ebrowse-ms "defaultButton" () 0 () "    QPushButton *defaultButton;" 1345 0  () () 0]
+[ebrowse-ms "endEdit" () 0 () "    QLineEdit *endEdit;" 1044 0  () () 0]
+[ebrowse-ms "getButton" () 0 () "    QPushButton *getButton;" 1313 0  () () 0]
+[ebrowse-ms "gridLayout" () 0 () "    QGridLayout *gridLayout;" 954 0  () () 0]
+[ebrowse-ms "groupBox" () 0 () "    QGroupBox *groupBox;" 925 0  () () 0]
+[ebrowse-ms "groupBox_2" () 0 () "    QGroupBox *groupBox_2;" 1071 0  () () 0]
+[ebrowse-ms "horizontalLayout" () 0 () "    QHBoxLayout *horizontalLayout;" 1407 0  () () 0]
+[ebrowse-ms "horizontalLayout_2" () 0 () "    QHBoxLayout *horizontalLayout_2;" 1108 0  () () 0]
+[ebrowse-ms "label" () 0 () "    QLabel *label;" 973 0  () () 0]
+[ebrowse-ms "label_2" () 0 () "    QLabel *label_2;" 1020 0  () () 0]
+[ebrowse-ms "layoutWidget" () 0 () "    QWidget *layoutWidget;" 1372 0  () () 0]
+[ebrowse-ms "numberRadio" () 0 () "    QRadioButton *numberRadio;" 1172 0  () () 0]
+[ebrowse-ms "okButton" () 0 () "    QPushButton *okButton;" 1434 0  () () 0]
+[ebrowse-ms "removeButton" () 0 () "    QPushButton *removeButton;" 1285 0  () () 0]
+[ebrowse-ms "startEdit" () 0 () "    QLineEdit *startEdit;" 999 0  () () 0]
+[ebrowse-ms "stepEdit" () 0 () "    QLineEdit *stepEdit;" 1226 0  () () 0]
+[ebrowse-ms "stepRadio" () 0 () "    QRadioButton *stepRadio;" 1201 0  () () 0]
+[ebrowse-ms "valueWidget" () 0 () "    QTableWidget *valueWidget;" 1496 0  () () 0]
+[ebrowse-ms "verticalLayout" () 0 () "    QVBoxLayout *verticalLayout;" 1141 0  () () 0]
+)
+([ebrowse-ms "retranslateUi" () 0 () "    void retranslateUi(QDialog" 5501 0  () "    void retranslateUi(QDialog" 5501]
+[ebrowse-ms "setupUi" () 0 () "    void setupUi(QDialog" 1552 0  () "    void setupUi(QDialog" 1552]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "china" () 0"main.cpp" "struct china {" 164() ]
+()([ebrowse-ms "group" () 0 () "     long group;" 212 0  () () 0]
+[ebrowse-ms "id" () 0 () "     int id;" 194 0  () () 0]
+[ebrowse-ms "name" () 0 () "     int name;" 180 0  () () 0]
+[ebrowse-ms "next" () 0 () "     china *next;" 231 0  () () 0]
+)
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "GridData" () 0"contourstruct.h" "struct GridData
+{" 595"#contourstruct.h#" ]
+()([ebrowse-ms "data" () 0 () "     Matrix *data;" 615 0  () () 0]
+[ebrowse-ms "info" () 0 () "     CGridDataInfo info;" 641 0  () () 0]
+)
+([ebrowse-ms "GridData" () 0 () "     GridData(){" 660 0  "contourstruct.h" "     GridData(){" 660]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "me" () 0() () 0() ]
+()()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui" () 0() () 0() ]
+()()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Qt" () 0() () 0() ]
+()()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "ColorFrame" () 0() () 0"moc_colorruler.cpp" ]
+()([ebrowse-ms "staticMetaObject" () 0 () () 0 0  () "      qt_meta_data_ColorFrame, 0 }
+};" 1242]
+)
+([ebrowse-ms "metaObject" () 4 () () 0 0  () "const QMetaObject *ColorFrame::metaObject()" 1287]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  () "int ColorFrame::qt_metacall(QMetaObject" 1617]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  () "void *ColorFrame::qt_metacast(const" 1364]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "QGraphicsScene" () 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "ContourScene" () 0"contourscene.h" "class ContourScene :" 144"#contourscene.cpp#" ]
+()([ebrowse-ms "_scaleRect" () 0 () "	QGraphicsRectItem _scaleRect;" 672 2  () () 0]
+[ebrowse-ms "staticMetaObject" () 0 () () 0 0  "moc_contourscene.cpp" "      qt_meta_data_ContourScene, 0 }
+};" 1261]
+)
+([ebrowse-ms "ContourScene" () 0 () "	ContourScene();" 208 2  "contourscene.cpp" "ContourScene::ContourScene()
+{" 55]
+[ebrowse-ms "hideScaleRect" () 0 () "	void hideScaleRect()" 310 2  "contourscene.h" "	void hideScaleRect()" 310]
+[ebrowse-ms "metaObject" () 4 () () 0 0  "moc_contourscene.cpp" "const QMetaObject *ContourScene::metaObject()" 1308]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  "moc_contourscene.cpp" "int ContourScene::qt_metacall(QMetaObject" 1654]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  "moc_contourscene.cpp" "void *ContourScene::qt_metacast(const" 1387]
+[ebrowse-ms "scaleRect" () 0 () "	QRectF scaleRect()" 601 2  "contourscene.h" "	QRectF scaleRect()" 601]
+[ebrowse-ms "setScaleRectLeftTopPos" () 0 () "	void setScaleRectLeftTopPos(QPointF" 526 2  "contourscene.h" "	void setScaleRectLeftTopPos(QPointF" 526]
+[ebrowse-ms "setScaleRectRightBottomPos" () 0 () "	void setScaleRectRightBottomPos(QPointF" 383 2  "contourscene.h" "	void setScaleRectRightBottomPos(QPointF" 383]
+[ebrowse-ms "showScaleRect" () 0 () "	void showScaleRect()" 254 2  "contourscene.h" "	void showScaleRect()" 254]
+[ebrowse-ms "~ContourScene" () 0 () "	~ContourScene()" 227 2  "contourscene.cpp" "ContourScene::~ContourScene()" 485]
+)
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "QFrame" () 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "ContourFrame" () 0"contourframe.h" "class ContourFrame :" 250"contourframe.cpp" ]
+()([ebrowse-ms "_fillColor" () 0 () "     bool _fillColor;" 1039 0  () () 0]
+[ebrowse-ms "_gridData" () 0 () "     GridData _gridData;" 1150 2  () () 0]
+[ebrowse-ms "_hasShowColor" () 0 () "     bool _hasShowColor;" 1325 2  () () 0]
+[ebrowse-ms "_hasShowGrid" () 0 () "     bool _hasShowGrid;" 1275 2  () () 0]
+[ebrowse-ms "_isRand" () 0 () "     bool _isRand;" 994 0  () () 0]
+[ebrowse-ms "_op" () 0 () "     ScatterData _op;" 1250 2  () () 0]
+[ebrowse-ms "_out" () 0 () "     Matrix *_out;" 1198 2  () () 0]
+[ebrowse-ms "_randInfo" () 0 () "     CGridDataInfo _randInfo;" 1380 2  () () 0]
+[ebrowse-ms "_randNum" () 0 () "     int _randNum;" 1433 2  () () 0]
+[ebrowse-ms "_scatterData" () 0 () "     Matrix *_scatterData;" 1178 2  () () 0]
+[ebrowse-ms "_showGrid" () 0 () "     bool _showGrid;" 1016 0  () () 0]
+[ebrowse-ms "_showPoint" () 0 () "     bool _showPoint;" 1062 0  () () 0]
+[ebrowse-ms "_traceNum" () 0 () "     int _traceNum;" 1454 2  () () 0]
+[ebrowse-ms "_valueList" () 0 () "     QVector<float> _valueList;" 1413 2  () () 0]
+[ebrowse-ms "staticMetaObject" () 0 () () 0 0  "moc_contourframe.cpp" "      qt_meta_data_ContourFrame, 0 }
+};" 2188]
+[ebrowse-ms "tracer" () 0 () "     ContourTracer *tracer;" 1227 2  () () 0]
+)
+([ebrowse-ms "ContourFrame" () 0 () "me(QFrame * parent = 0, Qt::WindowFlags f = 0 );" 336 2  () "     :" 332]
+[ebrowse-ms "editColorMap" () 0 () "     void editColorMap()" 692 2  () "void ContourFrame::editColorMap()" 8731]
+[ebrowse-ms "importGridFile" () 0 () "     void importGridFile()" 449 2  () "void ContourFrame::importGridFile()" 5312]
+[ebrowse-ms "importScatterFile" () 0 () "     void importScatterFile()" 483 2  () "void ContourFrame::importScatterFile()" 5979]
+[ebrowse-ms "initial" () 0 () "     void initial()" 1097 2  () "void ContourFrame::initial()" 7825]
+[ebrowse-ms "metaObject" () 4 () () 0 0  "moc_contourframe.cpp" "const QMetaObject *ContourFrame::metaObject()" 2235]
+[ebrowse-ms "newColorMap" () 0 () "     void newColorMap(QList" 724 2  () "void ContourFrame::newColorMap(QList" 9024]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  "moc_contourframe.cpp" "int ContourFrame::qt_metacall(QMetaObject" 2689]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  "moc_contourframe.cpp" "void *ContourFrame::qt_metacast(const" 2314]
+[ebrowse-ms "randContour" () 0 () "     void randContour()" 511 2  () "void ContourFrame::randContour()" 2336]
+[ebrowse-ms "saveGridData" () 0 () "     void saveGridData()" 597 2  () "void ContourFrame::saveGridData()" 7431]
+[ebrowse-ms "saveRandData" () 0 () "     void saveRandData()" 568 2  () "void ContourFrame::saveRandData()" 7245]
+[ebrowse-ms "setFillColor" () 2 () "     inline void setFillColor(bool" 779 2  "contourframe.h" "inline  void ContourFrame::setFillColor(bool" 1508]
+[ebrowse-ms "setGrid" () 2 () "     inline void setGrid(bool" 823 2  "contourframe.h" "inline  void ContourFrame::setGrid(bool" 1857]
+[ebrowse-ms "setHorizonBar" () 0 () "     void setHorizonBar()" 931 2  () "void ContourFrame::setHorizonBar()" 4478]
+[ebrowse-ms "setLabel" () 0 () "     void setLabel(int" 654 2  () "void ContourFrame::setLabel(int" 4964]
+[ebrowse-ms "setPointShow" () 2 () "     inline void setPointShow(bool" 872 2  "contourframe.h" "inline void ContourFrame::setPointShow(bool" 2198]
+[ebrowse-ms "setRandInfo" () 0 () "     void setRandInfo()" 539 2  () "void ContourFrame::setRandInfo()" 7613]
+[ebrowse-ms "setTraceValue" () 0 () "     void setTraceValue()" 627 2  () "void ContourFrame::setTraceValue()" 8318]
+[ebrowse-ms "setVerticalBar" () 0 () "     void setVerticalBar()" 962 2  () "void ContourFrame::setVerticalBar()" 4729]
+[ebrowse-ms "tracing" () 0 () "     void tracing()" 1121 2  () "void ContourFrame::tracing()" 3202]
+[ebrowse-ms "~ContourFrame" () 0 () "     ~ContourFrame()" 399 2  () "ContourFrame::~ContourFrame()" 2294]
+)
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "TraceDialog" () 0() () 0"moc_tracesetdialog.cpp" ]
+()([ebrowse-ms "staticMetaObject" () 0 () () 0 0  () "      qt_meta_data_TraceDialog, 0 }
+};" 1560]
+)
+([ebrowse-ms "metaObject" () 4 () () 0 0  () "const QMetaObject *TraceDialog::metaObject()" 1606]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  () "int TraceDialog::qt_metacall(QMetaObject" 2070]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  () "void *TraceDialog::qt_metacast(const" 1684]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_RandSet" "Ui" 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "RandSet" "Ui" 0"ui_randset.h" "    class RandSet:" 8030() ]
+()()
+()
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_RandSet" () 0"ui_randset.h" "class Ui_RandSet
+{" 803"ui_randset.h" ]
+()([ebrowse-ms "cancelButton" () 0 () "    QPushButton *cancelButton;" 1284 0  () () 0]
+[ebrowse-ms "colsEdit" () 0 () "    QLineEdit *colsEdit;" 1432 0  () () 0]
+[ebrowse-ms "gridLayout" () 0 () "    QGridLayout *gridLayout;" 1340 0  () () 0]
+[ebrowse-ms "groupBox" () 0 () "    QGroupBox *groupBox;" 836 0  () () 0]
+[ebrowse-ms "groupBox_2" () 0 () "    QGroupBox *groupBox_2;" 953 0  () () 0]
+[ebrowse-ms "groupBox_3" () 0 () "    QGroupBox *groupBox_3;" 1072 0  () () 0]
+[ebrowse-ms "groupBox_4" () 0 () "    QGroupBox *groupBox_4;" 1311 0  () () 0]
+[ebrowse-ms "horizontalLayout" () 0 () "    QHBoxLayout *horizontalLayout;" 1226 0  () () 0]
+[ebrowse-ms "horizontalLayout_2" () 0 () "    QHBoxLayout *horizontalLayout_2;" 1490 0  () () 0]
+[ebrowse-ms "label" () 0 () "    QLabel *label;" 880 0  () () 0]
+[ebrowse-ms "label_2" () 0 () "    QLabel *label_2;" 901 0  () () 0]
+[ebrowse-ms "label_3" () 0 () "    QLabel *label_3;" 999 0  () () 0]
+[ebrowse-ms "label_4" () 0 () "    QLabel *label_4;" 1020 0  () () 0]
+[ebrowse-ms "label_5" () 0 () "    QLabel *label_5;" 1118 0  () () 0]
+[ebrowse-ms "label_6" () 0 () "    QLabel *label_6;" 1139 0  () () 0]
+[ebrowse-ms "label_7" () 0 () "    QLabel *label_7;" 1361 0  () () 0]
+[ebrowse-ms "label_8" () 0 () "    QLabel *label_8;" 1407 0  () () 0]
+[ebrowse-ms "label_9" () 0 () "    QLabel *label_9;" 1511 0  () () 0]
+[ebrowse-ms "layoutWidget" () 0 () "    QWidget *layoutWidget;" 1191 0  () () 0]
+[ebrowse-ms "maxXEdit" () 0 () "    QLineEdit *maxXEdit;" 861 0  () () 0]
+[ebrowse-ms "maxYEdit" () 0 () "    QLineEdit *maxYEdit;" 978 0  () () 0]
+[ebrowse-ms "maxZEdit" () 0 () "    QLineEdit *maxZEdit;" 1097 0  () () 0]
+[ebrowse-ms "minXEdit" () 0 () "    QLineEdit *minXEdit;" 926 0  () () 0]
+[ebrowse-ms "minYEdit" () 0 () "    QLineEdit *minYEdit;" 1045 0  () () 0]
+[ebrowse-ms "minZEdit" () 0 () "    QLineEdit *minZEdit;" 1164 0  () () 0]
+[ebrowse-ms "numberEdit" () 0 () "    QLineEdit *numberEdit;" 1538 0  () () 0]
+[ebrowse-ms "okButton" () 0 () "    QPushButton *okButton;" 1253 0  () () 0]
+[ebrowse-ms "rowsEdit" () 0 () "    QLineEdit *rowsEdit;" 1386 0  () () 0]
+[ebrowse-ms "widget" () 0 () "    QWidget *widget;" 1453 0  () () 0]
+)
+([ebrowse-ms "retranslateUi" () 0 () "    void retranslateUi(QDialog" 6436 0  () "    void retranslateUi(QDialog" 6436]
+[ebrowse-ms "setupUi" () 0 () "    void setupUi(QDialog" 1564 0  () "    void setupUi(QDialog" 1564]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "QGraphicsItem" () 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "CoordinateItem" () 0"coordinate.h" "class CoordinateItem :" 694"#coordinate.cpp#" ]
+()([ebrowse-ms "_max" () 0 () "     float _min,_max;" 1317 2  () () 0]
+[ebrowse-ms "_p2" () 0 () "     float _p1,_p2;" 1338 2  () () 0]
+[ebrowse-ms "_scale" () 0 () "     float _scale;" 1397 2  () () 0]
+[ebrowse-ms "_step" () 0 () "     float _step;" 1377 2  () () 0]
+[ebrowse-ms "_stepW" () 0 () "     float _stepW;" 1417 2  () () 0]
+[ebrowse-ms "_type" () 0 () "     Coordinate::Type _type;" 1447 2  () () 0]
+)
+([ebrowse-ms "CoordinateItem" () 0 () "     CoordinateItem(QGraphicsItem *parent = 0);" 796 0  "coordinate.cpp" "     :" 1338]
+[ebrowse-ms "boundingRect" () 4 () "     QRectF boundingRect()" 867 0  "coordinate.cpp" "QRectF CoordinateItem::boundingRect()" 3273]
+[ebrowse-ms "computeStep" () 0 () "     void computeStep()" 1291 2  "coordinate.cpp" "void CoordinateItem::computeStep()" 3828]
+[ebrowse-ms "getType" () 4 () "     Coordinate::Type  getType()" 1061 0  "coordinate.h" "     Coordinate::Type  getType()" 1061]
+[ebrowse-ms "paint" () 0 () "     void paint(QPainter" 1190 2  "coordinate.cpp" "void CoordinateItem::paint(QPainter" 1476]
+[ebrowse-ms "setCoordinate" () 0 () "     void setCoordinate(float" 1122 0  "coordinate.cpp" "void CoordinateItem::setCoordinate(float" 3519]
+[ebrowse-ms "setType" () 0 () "     void setType(Coordinate" 987 0  "coordinate.h" "     void setType(Coordinate" 987]
+[ebrowse-ms "shap" () 4 () "     QPainterPath shap()" 902 0  "coordinate.cpp" "QPainterPath CoordinateItem::shap()" 3383]
+[ebrowse-ms "type" () 4 () "     int type()" 928 0  "coordinate.h" "     int type()" 928]
+[ebrowse-ms "~CoordinateItem" () 0 () "     ~CoordinateItem()" 836 0  "coordinate.cpp" "CoordinateItem::~CoordinateItem()" 1429]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "CurveItem" () 0"curveitem.h" "class CurveItem :" 159"curveitem.cpp" ]
+()([ebrowse-ms "_curve" () 0 () "     CCurve *_curve;" 589 2  () () 0]
+)
+([ebrowse-ms "CurveItem" () 0 () "     CurveItem(QGraphicsItem* parent=0);" 256 0  () "     :" 121]
+[ebrowse-ms "boundingRect" () 4 () "     QRectF boundingRect()" 410 0  () "QRectF CurveItem::boundingRect()" 388]
+[ebrowse-ms "paint" () 0 () "     void paint(QPainter" 480 0  () "void CurveItem::paint(QPainter" 677]
+[ebrowse-ms "setCurve" () 0 () "     void setCurve(CCurve" 319 0  () "void CurveItem::setCurve(CCurve" 314]
+[ebrowse-ms "shap" () 4 () "     QPainterPath shap()" 445 0  () "QPainterPath CurveItem::shap()" 549]
+[ebrowse-ms "type" () 4 () "     int type()" 347 0  "curveitem.h" "     int type()" 347]
+[ebrowse-ms "~CurveItem" () 0 () "     ~CurveItem()" 289 0  () "CurveItem::~CurveItem()" 269]
+)
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "QMetaObject" () 0() () 0() ]
+()()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "CGridDataInfo" () 0"contourstruct.h" "struct CGridDataInfo
+{" 364"#contourstruct.h#" ]
+()([ebrowse-ms "cols" () 0 () "     int cols;" 396 0  () () 0]
+[ebrowse-ms "rows" () 0 () "     int rows;" 380 0  () () 0]
+[ebrowse-ms "xMax" () 0 () "     float xMax;" 432 0  () () 0]
+[ebrowse-ms "xMin" () 0 () "     float xMin;" 414 0  () () 0]
+[ebrowse-ms "yMax" () 0 () "     float yMax;" 468 0  () () 0]
+[ebrowse-ms "yMin" () 0 () "     float yMin;" 450 0  () () 0]
+[ebrowse-ms "zMax" () 0 () "     float zMax;" 504 0  () () 0]
+[ebrowse-ms "zMin" () 0 () "     float zMin;" 486 0  () () 0]
+)
+([ebrowse-ms "CGridDataInfo" () 0 () "     CGridDataInfo(){" 528 0  "contourstruct.h" "     CGridDataInfo(){" 528]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "info" () 0"main.cpp" "struct info{" 251() ]
+()([ebrowse-ms "res" () 0 () "     unsigned int res:2;" 277 0  () () 0]
+)
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "QGraphicsView" () 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "ContourView" () 0"contourview.h" "class ContourView :" 404"contourview.cpp" ]
+()([ebrowse-ms "_colorMap" () 0 () "  ColorMap *_colorMap;" 1413 2  () () 0]
+[ebrowse-ms "_curveList" () 0 () "  CCurveList _curveList;" 1433 2  () () 0]
+[ebrowse-ms "_fillItems" () 0 () "  QList<QGraphicsPathItem*> _fillItems;" 1584 2  () () 0]
+[ebrowse-ms "_gridItems" () 0 () "  QList<QGraphicsLineItem*> _gridItems;" 1625 2  () () 0]
+[ebrowse-ms "_info" () 0 () "  CGridDataInfo _info;" 1541 2  () () 0]
+[ebrowse-ms "_pointsItems" () 0 () "  QList<QGraphicsEllipseItem*> _pointsItems;" 1671 2  () () 0]
+[ebrowse-ms "_scene" () 0 () "  ContourScene *_scene;" 1383 2  () () 0]
+[ebrowse-ms "colorMap" () 0 () "  ColorMap *colorMap;" 1094 0  () () 0]
+[ebrowse-ms "scaleY" () 0 () "  qreal scaleX,scaleY;" 1407 2  () () 0]
+[ebrowse-ms "staticMetaObject" () 0 () () 0 0  "moc_contourview.cpp" "      qt_meta_data_ContourView, 0 }
+};" 1564]
+[ebrowse-ms "time" () 0 () "  QTime time;" 1686 2  () () 0]
+[ebrowse-ms "typeA" () 0 () "  CCurveList typeA;" 1454 2  () () 0]
+[ebrowse-ms "typeB" () 0 () "  CCurveList typeB;" 1475 2  () () 0]
+[ebrowse-ms "typeC" () 0 () "  CCurveList typeC;" 1496 2  () () 0]
+[ebrowse-ms "typeD" () 0 () "  CCurveList typeD;" 1517 2  () () 0]
+)
+([ebrowse-ms "ContourView" () 0 () "  ContourView(QWidget * parent = 0);" 477 2  () "     :" 1017]
+[ebrowse-ms "cleanColor" () 0 () "  void cleanColor()" 629 2  () "void ContourView::cleanColor()" 2791]
+[ebrowse-ms "cleanData" () 0 () "  void cleanData()" 604 2  () "void ContourView::cleanData()" 2384]
+[ebrowse-ms "drawData" () 0 () "  void drawData()" 651 2  () "void ContourView::drawData()" 2174]
+[ebrowse-ms "drawGrid" () 0 () "  void drawGrid()" 673 2  () "void ContourView::drawGrid()" 6210]
+[ebrowse-ms "drawScatterPoints" () 0 () "  void drawScatterPoints(Matrix" 709 2  () "void ContourView::drawScatterPoints(Matrix" 7438]
+[ebrowse-ms "fillColor" () 0 () "  void fillColor()" 739 2  () "void ContourView::fillColor()" 3370]
+[ebrowse-ms "fillCurve" () 0 () "  void fillCurve(CCurve" 1296 2  () "void ContourView::fillCurve(CCurve" 4241]
+[ebrowse-ms "indexChanged" () 0 () "  void indexChanged(int" 1050 2  "moc_contourview.cpp" "void ContourView::indexChanged(int" 3537]
+[ebrowse-ms "metaObject" () 4 () () 0 0  "moc_contourview.cpp" "const QMetaObject *ContourView::metaObject()" 1610]
+[ebrowse-ms "mouseMoveEvent" () 0 () "  void mouseMoveEvent ( QMouseEvent" 1145 1  () "void ContourView::mouseMoveEvent( QMouseEvent" 9326]
+[ebrowse-ms "mousePressEvent" () 0 () "  void mousePressEvent ( QMouseEvent" 1194 1  () "void ContourView::mousePressEvent ( QMouseEvent" 9055]
+[ebrowse-ms "mouseReleaseEvent" () 0 () "  void mouseReleaseEvent ( QMouseEvent" 1245 1  () "oid ContourView::mouseReleaseEvent ( QMouseEvent" 9892]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  "moc_contourview.cpp" "int ContourView::qt_metacall(QMetaObject" 1951]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  "moc_contourview.cpp" "void *ContourView::qt_metacast(const" 1688]
+[ebrowse-ms "removePoints" () 0 () "  void removePoints()" 868 2  () "void ContourView::removePoints()" 3228]
+[ebrowse-ms "setGridData" () 0 () "  void setGridData(CCurveList" 546 2  () "void ContourView::setGridData(CCurveList" 1518]
+[ebrowse-ms "setHCoordinate" () 0 () "  void setHCoordinate(float" 982 2  "moc_contourview.cpp" "void ContourView::setHCoordinate(float" 3140]
+[ebrowse-ms "setShowColor" () 0 () "  void setShowColor(bool" 802 2  () "void ContourView::setShowColor(bool" 2936]
+[ebrowse-ms "setShowGrid" () 0 () "  void setShowGrid(bool" 836 2  () "void ContourView::setShowGrid(bool" 3083]
+[ebrowse-ms "setVCoordinate" () 0 () "  void setVCoordinate(float" 910 2  "moc_contourview.cpp" "void ContourView::setVCoordinate(float" 2739]
+[ebrowse-ms "showGrid" () 0 () "  void showGrid(bool" 764 2  () () 0]
+[ebrowse-ms "srotCurve" () 0 () "  void srotCurve()" 1355 2  () "void ContourView::srotCurve()" 8161]
+[ebrowse-ms "~ContourView" () 0 () "  ~ContourView()" 512 2  () "ContourView::~ContourView()" 1464]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Coordinate" () 0"coordinate.h" "class Coordinate:" 190"#coordinate.cpp#" ]
+()([ebrowse-ms "_baseSize" () 0 () "     float _baseSize;" 574 2  () () 0]
+[ebrowse-ms "_item" () 0 () "     CoordinateItem* _item;" 498 2  () () 0]
+[ebrowse-ms "_max" () 0 () "     float _min,_max;" 551 2  () () 0]
+[ebrowse-ms "_scale" () 0 () "     float _scale;" 594 2  () () 0]
+[ebrowse-ms "_scene" () 0 () "     QGraphicsScene *_scene;" 528 2  () () 0]
+[ebrowse-ms "staticMetaObject" () 0 () () 0 0  "moc_coordinate.cpp" "      qt_meta_data_Coordinate, 0 }
+};" 1395]
+)
+([ebrowse-ms "Coordinate" () 0 () "     Coordinate(QWidget *parent = 0);" 300 2  "coordinate.cpp" "ordinate::Coordinate(QWidget *parent/* = 0*/)
+{" 336]
+[ebrowse-ms "addjust" () 0 () "     void addjust(float" 412 2  "coordinate.cpp" "void Coordinate::addjust(float" 876]
+[ebrowse-ms "metaObject" () 4 () () 0 0  "moc_coordinate.cpp" "const QMetaObject *Coordinate::metaObject()" 1440]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  "moc_coordinate.cpp" "int Coordinate::qt_metacall(QMetaObject" 1777]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  "moc_coordinate.cpp" "void *Coordinate::qt_metacast(const" 1517]
+[ebrowse-ms "setType" () 0 () "     void setType(Type" 340 2  "coordinate.cpp" "void Coordinate::setType(Type" 802]
+[ebrowse-ms "~Coordinate" () 0 () "     ~Coordinate()" 369 2  "coordinate.cpp" "Coordinate::~Coordinate()" 761]
+)
+()
+()
+()
+([ebrowse-ms "Type" () 0 () "     enum Type{" 253 2  "coordinate.h" "     enum Type{" 253]
+)
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "CCurve" () 0"contourstruct.h" "class CCurve
+{" 713"#contourstruct.h#" ]
+()([ebrowse-ms "data" () 0 () "     QVector<QPointF>  data;" 928 0  () () 0]
+[ebrowse-ms "stype" () 0 () "     SType stype;" 1055 0  () () 0]
+[ebrowse-ms "type" () 0 () "     Type type;" 1036 0  () () 0]
+[ebrowse-ms "value" () 0 () "     float value;" 947 0  () () 0]
+[ebrowse-ms "xMax" () 0 () "     float xMax;" 983 0  () () 0]
+[ebrowse-ms "xMin" () 0 () "     float xMin;" 965 0  () () 0]
+[ebrowse-ms "yMax" () 0 () "     float yMax;" 1019 0  () () 0]
+[ebrowse-ms "yMin" () 0 () "     float yMin;" 1001 0  () () 0]
+)
+([ebrowse-ms "CCurve" () 0 () "     CCurve(){" 1072 0  "contourstruct.h" "     CCurve(){" 1072]
+[ebrowse-ms "getCorner" () 4 () "     Corner getCorner()" 1214 0  "contourstruct.h" "     Corner getCorner()" 1214]
+[ebrowse-ms "getCurveWidth" () 4 () "     qreal getCurveWidth()" 1941 0  "contourstruct.h" "     qreal getCurveWidth()" 1941]
+)
+()
+()
+()
+([ebrowse-ms "Corner" () 0 () "     enum Corner{" 855 0  "contourstruct.h" "     enum Corner{" 855]
+[ebrowse-ms "SType" () 0 () "     enum SType{" 815 0  "contourstruct.h" "     enum SType{" 815]
+[ebrowse-ms "Type" () 0 () "     enum Type{" 786 0  "contourstruct.h" "     enum Type{" 786]
+)
+()()
+][ebrowse-ts [ebrowse-cs "ConversePos" () 0"contourstruct.h" "class ConversePos
+{" 3452"#contourstruct.h#" ]
+()()
+()
+()
+([ebrowse-ms "pos2scene" () 0 () "     static  QPointF pos2scene(QPointF" 3968 0  "contourstruct.h" "     static  QPointF pos2scene(QPointF" 3968]
+[ebrowse-ms "pos2scene" () 0 () "     static  QPointF pos2scene(float" 3499 0  "contourstruct.h" "     static  QPointF pos2scene(float" 3499]
+)
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_CFrame" "Ui" 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "CFrame" "Ui" 0"ui_contourframe.h" "    class CFrame:" 4494() ]
+([ebrowse-ts [ebrowse-cs "ContourFrame" () 0"contourframe.h" "class ContourFrame :" 250"contourframe.cpp" ]
+()([ebrowse-ms "_fillColor" () 0 () "     bool _fillColor;" 1039 0  () () 0]
+[ebrowse-ms "_gridData" () 0 () "     GridData _gridData;" 1150 2  () () 0]
+[ebrowse-ms "_hasShowColor" () 0 () "     bool _hasShowColor;" 1325 2  () () 0]
+[ebrowse-ms "_hasShowGrid" () 0 () "     bool _hasShowGrid;" 1275 2  () () 0]
+[ebrowse-ms "_isRand" () 0 () "     bool _isRand;" 994 0  () () 0]
+[ebrowse-ms "_op" () 0 () "     ScatterData _op;" 1250 2  () () 0]
+[ebrowse-ms "_out" () 0 () "     Matrix *_out;" 1198 2  () () 0]
+[ebrowse-ms "_randInfo" () 0 () "     CGridDataInfo _randInfo;" 1380 2  () () 0]
+[ebrowse-ms "_randNum" () 0 () "     int _randNum;" 1433 2  () () 0]
+[ebrowse-ms "_scatterData" () 0 () "     Matrix *_scatterData;" 1178 2  () () 0]
+[ebrowse-ms "_showGrid" () 0 () "     bool _showGrid;" 1016 0  () () 0]
+[ebrowse-ms "_showPoint" () 0 () "     bool _showPoint;" 1062 0  () () 0]
+[ebrowse-ms "_traceNum" () 0 () "     int _traceNum;" 1454 2  () () 0]
+[ebrowse-ms "_valueList" () 0 () "     QVector<float> _valueList;" 1413 2  () () 0]
+[ebrowse-ms "staticMetaObject" () 0 () () 0 0  "moc_contourframe.cpp" "      qt_meta_data_ContourFrame, 0 }
+};" 2188]
+[ebrowse-ms "tracer" () 0 () "     ContourTracer *tracer;" 1227 2  () () 0]
+)
+([ebrowse-ms "ContourFrame" () 0 () "me(QFrame * parent = 0, Qt::WindowFlags f = 0 );" 336 2  () "     :" 332]
+[ebrowse-ms "editColorMap" () 0 () "     void editColorMap()" 692 2  () "void ContourFrame::editColorMap()" 8731]
+[ebrowse-ms "importGridFile" () 0 () "     void importGridFile()" 449 2  () "void ContourFrame::importGridFile()" 5312]
+[ebrowse-ms "importScatterFile" () 0 () "     void importScatterFile()" 483 2  () "void ContourFrame::importScatterFile()" 5979]
+[ebrowse-ms "initial" () 0 () "     void initial()" 1097 2  () "void ContourFrame::initial()" 7825]
+[ebrowse-ms "metaObject" () 4 () () 0 0  "moc_contourframe.cpp" "const QMetaObject *ContourFrame::metaObject()" 2235]
+[ebrowse-ms "newColorMap" () 0 () "     void newColorMap(QList" 724 2  () "void ContourFrame::newColorMap(QList" 9024]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  "moc_contourframe.cpp" "int ContourFrame::qt_metacall(QMetaObject" 2689]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  "moc_contourframe.cpp" "void *ContourFrame::qt_metacast(const" 2314]
+[ebrowse-ms "randContour" () 0 () "     void randContour()" 511 2  () "void ContourFrame::randContour()" 2336]
+[ebrowse-ms "saveGridData" () 0 () "     void saveGridData()" 597 2  () "void ContourFrame::saveGridData()" 7431]
+[ebrowse-ms "saveRandData" () 0 () "     void saveRandData()" 568 2  () "void ContourFrame::saveRandData()" 7245]
+[ebrowse-ms "setFillColor" () 2 () "     inline void setFillColor(bool" 779 2  "contourframe.h" "inline  void ContourFrame::setFillColor(bool" 1508]
+[ebrowse-ms "setGrid" () 2 () "     inline void setGrid(bool" 823 2  "contourframe.h" "inline  void ContourFrame::setGrid(bool" 1857]
+[ebrowse-ms "setHorizonBar" () 0 () "     void setHorizonBar()" 931 2  () "void ContourFrame::setHorizonBar()" 4478]
+[ebrowse-ms "setLabel" () 0 () "     void setLabel(int" 654 2  () "void ContourFrame::setLabel(int" 4964]
+[ebrowse-ms "setPointShow" () 2 () "     inline void setPointShow(bool" 872 2  "contourframe.h" "inline void ContourFrame::setPointShow(bool" 2198]
+[ebrowse-ms "setRandInfo" () 0 () "     void setRandInfo()" 539 2  () "void ContourFrame::setRandInfo()" 7613]
+[ebrowse-ms "setTraceValue" () 0 () "     void setTraceValue()" 627 2  () "void ContourFrame::setTraceValue()" 8318]
+[ebrowse-ms "setVerticalBar" () 0 () "     void setVerticalBar()" 962 2  () "void ContourFrame::setVerticalBar()" 4729]
+[ebrowse-ms "tracing" () 0 () "     void tracing()" 1121 2  () "void ContourFrame::tracing()" 3202]
+[ebrowse-ms "~ContourFrame" () 0 () "     ~ContourFrame()" 399 2  () "ContourFrame::~ContourFrame()" 2294]
+)
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_CFrame" () 0"ui_contourframe.h" "class Ui_CFrame
+{" 843"ui_contourframe.h" ]
+()([ebrowse-ms "colorFrame" () 0 () "    ColorRuler *colorFrame;" 1030 0  () () 0]
+[ebrowse-ms "gridLayout" () 0 () "    QGridLayout *gridLayout;" 915 0  () () 0]
+[ebrowse-ms "horizontalLayout" () 0 () "    QHBoxLayout *horizontalLayout;" 886 0  () () 0]
+[ebrowse-ms "horizontalScrollBar" () 0 () "    QScrollBar *horizontalScrollBar;" 1096 0  () () 0]
+[ebrowse-ms "iLabel" () 0 () "    QLabel *iLabel;" 1140 0  () () 0]
+[ebrowse-ms "jLabel" () 0 () "    QLabel *jLabel;" 1160 0  () () 0]
+[ebrowse-ms "labelFrame" () 0 () "    QFrame *labelFrame;" 1120 0  () () 0]
+[ebrowse-ms "verticalScrollBar" () 0 () "    QScrollBar *verticalScrollBar;" 1002 0  () () 0]
+[ebrowse-ms "view" () 0 () "    ContourView *view;" 967 0  () () 0]
+[ebrowse-ms "xcoordinate" () 0 () "    Coordinate *xcoordinate;" 1059 0  () () 0]
+[ebrowse-ms "ycoordinate" () 0 () "    Coordinate *ycoordinate;" 944 0  () () 0]
+[ebrowse-ms "zLabel" () 0 () "    QLabel *zLabel;" 1180 0  () () 0]
+)
+([ebrowse-ms "retranslateUi" () 0 () "    void retranslateUi(QWidget" 3998 0  () "    void retranslateUi(QWidget" 3998]
+[ebrowse-ms "setupUi" () 0 () "    void setupUi(QWidget" 1206 0  () "    void setupUi(QWidget" 1206]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_colormapEdit" "Ui" 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "colormapEdit" "Ui" 0"ui_colormapedit.h" "    class colormapEdit:" 14911() ]
+()()
+()
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "Ui_colormapEdit" () 0"ui_colormapedit.h" "class Ui_colormapEdit
+{" 828"ui_colormapedit.h" ]
+()([ebrowse-ms "applyButton" () 0 () "    QPushButton *applyButton;" 1982 0  () () 0]
+[ebrowse-ms "biasResetButton" () 0 () "    QPushButton *biasResetButton;" 2216 0  () () 0]
+[ebrowse-ms "biasSlider" () 0 () "    QSlider *biasSlider;" 2059 0  () () 0]
+[ebrowse-ms "cancelButton" () 0 () "    QPushButton *cancelButton;" 2013 0  () () 0]
+[ebrowse-ms "colorFrame" () 0 () "    ColorFrame *colorFrame;" 864 0  () () 0]
+[ebrowse-ms "colorNumberButton" () 0 () "    QRadioButton *colorNumberButton;" 2146 0  () () 0]
+[ebrowse-ms "contrastRestButton" () 0 () "    QPushButton *contrastRestButton;" 2253 0  () () 0]
+[ebrowse-ms "contrastSlider" () 0 () "    QSlider *contrastSlider;" 2109 0  () () 0]
+[ebrowse-ms "dynamicButton" () 0 () "    QRadioButton *dynamicButton;" 2286 0  () () 0]
+[ebrowse-ms "label" () 0 () "    QLabel *label;" 1925 0  () () 0]
+[ebrowse-ms "label_2" () 0 () "    QLabel *label_2;" 2034 0  () () 0]
+[ebrowse-ms "label_3" () 0 () "    QLabel *label_3;" 2080 0  () () 0]
+[ebrowse-ms "label_4" () 0 () "    QLabel *label_4;" 2307 0  () () 0]
+[ebrowse-ms "mapBox" () 0 () "    QComboBox *mapBox;" 2330 0  () () 0]
+[ebrowse-ms "okButton" () 0 () "    QPushButton *okButton;" 1952 0  () () 0]
+[ebrowse-ms "rotateResetButton" () 0 () "    QPushButton *rotateResetButton;" 2182 0  () () 0]
+[ebrowse-ms "rotateSlider" () 0 () "    QSlider *rotateSlider;" 1906 0  () () 0]
+[ebrowse-ms "toolButton_1" () 0 () "    QToolButton *toolButton_1;" 895 0  () () 0]
+[ebrowse-ms "toolButton_10" () 0 () "    QToolButton *toolButton_10;" 1175 0  () () 0]
+[ebrowse-ms "toolButton_11" () 0 () "    QToolButton *toolButton_11;" 1207 0  () () 0]
+[ebrowse-ms "toolButton_12" () 0 () "    QToolButton *toolButton_12;" 1239 0  () () 0]
+[ebrowse-ms "toolButton_13" () 0 () "    QToolButton *toolButton_13;" 1271 0  () () 0]
+[ebrowse-ms "toolButton_14" () 0 () "    QToolButton *toolButton_14;" 1303 0  () () 0]
+[ebrowse-ms "toolButton_15" () 0 () "    QToolButton *toolButton_15;" 1335 0  () () 0]
+[ebrowse-ms "toolButton_16" () 0 () "    QToolButton *toolButton_16;" 1367 0  () () 0]
+[ebrowse-ms "toolButton_17" () 0 () "    QToolButton *toolButton_17;" 1399 0  () () 0]
+[ebrowse-ms "toolButton_18" () 0 () "    QToolButton *toolButton_18;" 1431 0  () () 0]
+[ebrowse-ms "toolButton_19" () 0 () "    QToolButton *toolButton_19;" 1463 0  () () 0]
+[ebrowse-ms "toolButton_2" () 0 () "    QToolButton *toolButton_2;" 926 0  () () 0]
+[ebrowse-ms "toolButton_20" () 0 () "    QToolButton *toolButton_20;" 1495 0  () () 0]
+[ebrowse-ms "toolButton_21" () 0 () "    QToolButton *toolButton_21;" 1527 0  () () 0]
+[ebrowse-ms "toolButton_22" () 0 () "    QToolButton *toolButton_22;" 1559 0  () () 0]
+[ebrowse-ms "toolButton_23" () 0 () "    QToolButton *toolButton_23;" 1591 0  () () 0]
+[ebrowse-ms "toolButton_24" () 0 () "    QToolButton *toolButton_24;" 1623 0  () () 0]
+[ebrowse-ms "toolButton_25" () 0 () "    QToolButton *toolButton_25;" 1655 0  () () 0]
+[ebrowse-ms "toolButton_26" () 0 () "    QToolButton *toolButton_26;" 1687 0  () () 0]
+[ebrowse-ms "toolButton_27" () 0 () "    QToolButton *toolButton_27;" 1719 0  () () 0]
+[ebrowse-ms "toolButton_28" () 0 () "    QToolButton *toolButton_28;" 1751 0  () () 0]
+[ebrowse-ms "toolButton_29" () 0 () "    QToolButton *toolButton_29;" 1783 0  () () 0]
+[ebrowse-ms "toolButton_3" () 0 () "    QToolButton *toolButton_3;" 957 0  () () 0]
+[ebrowse-ms "toolButton_30" () 0 () "    QToolButton *toolButton_30;" 1815 0  () () 0]
+[ebrowse-ms "toolButton_31" () 0 () "    QToolButton *toolButton_31;" 1847 0  () () 0]
+[ebrowse-ms "toolButton_32" () 0 () "    QToolButton *toolButton_32;" 1879 0  () () 0]
+[ebrowse-ms "toolButton_4" () 0 () "    QToolButton *toolButton_4;" 988 0  () () 0]
+[ebrowse-ms "toolButton_5" () 0 () "    QToolButton *toolButton_5;" 1019 0  () () 0]
+[ebrowse-ms "toolButton_6" () 0 () "    QToolButton *toolButton_6;" 1050 0  () () 0]
+[ebrowse-ms "toolButton_7" () 0 () "    QToolButton *toolButton_7;" 1081 0  () () 0]
+[ebrowse-ms "toolButton_8" () 0 () "    QToolButton *toolButton_8;" 1112 0  () () 0]
+[ebrowse-ms "toolButton_9" () 0 () "    QToolButton *toolButton_9;" 1143 0  () () 0]
+)
+([ebrowse-ms "retranslateUi" () 0 () "    void retranslateUi(QDialog" 12130 0  () "    void retranslateUi(QDialog" 12130]
+[ebrowse-ms "setupUi" () 0 () "    void setupUi(QDialog" 2356 0  () "    void setupUi(QDialog" 2356]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "QMainWindow" () 0() () 0() ]
+([ebrowse-ts [ebrowse-cs "MainWindow" () 0"mainwindow.h" "class MainWindow :" 151"mainwindow.cpp" ]
+()([ebrowse-ms "aboutAction" () 0 () "     QAction *aboutAction;" 999 2  () () 0]
+[ebrowse-ms "colorEditAction" () 0 () "     QAction *colorEditAction;" 971 2  () () 0]
+[ebrowse-ms "editMenu" () 0 () "     QMenu *editMenu;" 510 2  () () 0]
+[ebrowse-ms "exitAction" () 0 () "     QAction *exitAction;" 747 2  () () 0]
+[ebrowse-ms "fileMenu" () 0 () "     QMenu *fileMenu;" 487 2  () () 0]
+[ebrowse-ms "fillColorAction" () 0 () "     QAction *fillColorAction;" 720 2  () () 0]
+[ebrowse-ms "frame" () 0 () "     ContourFrame *frame;" 464 2  () () 0]
+[ebrowse-ms "helpMenu" () 0 () "     QMenu *helpMenu;" 558 2  () () 0]
+[ebrowse-ms "openGridAction" () 0 () "     QAction *openGridAction;" 591 2  () () 0]
+[ebrowse-ms "openScatterAction" () 0 () "     QAction *openScatterAction;" 625 2  () () 0]
+[ebrowse-ms "optionMenu" () 0 () "     QMenu *optionMenu;" 535 2  () () 0]
+[ebrowse-ms "randAction" () 0 () "     QAction *randAction;" 806 2  () () 0]
+[ebrowse-ms "randSetAction" () 0 () "     QAction *randSetAction;" 836 2  () () 0]
+[ebrowse-ms "saveGridDataAction" () 0 () "     QAction *saveGridDataAction;" 906 2  () () 0]
+[ebrowse-ms "saveRandDataAction" () 0 () "     QAction *saveRandDataAction;" 871 2  () () 0]
+[ebrowse-ms "separatorAction" () 0 () "     QAction *separatorAction;" 779 2  () () 0]
+[ebrowse-ms "showGridAction" () 0 () "     QAction *showGridAction;" 656 2  () () 0]
+[ebrowse-ms "showPointAction" () 0 () "     QAction *showPointAction;" 688 2  () () 0]
+[ebrowse-ms "staticMetaObject" () 0 () () 0 0  "moc_mainwindow.cpp" "      qt_meta_data_MainWindow, 0 }
+};" 1337]
+[ebrowse-ms "traceValueAction" () 0 () "     QAction *traceValueAction;" 939 2  () () 0]
+)
+([ebrowse-ms "MainWindow" () 0 () "idget * parent = 0, Qt::WindowFlags flags = 0 );" 224 2  () "     :" 187]
+[ebrowse-ms "about" () 0 () "     void about()" 328 2  () "void MainWindow::about()" 4469]
+[ebrowse-ms "createActions" () 0 () "     void createActions()" 410 2  () "void MainWindow::createActions()" 534]
+[ebrowse-ms "createMenus" () 0 () "     void createMenus()" 436 2  () "void MainWindow::createMenus()" 2942]
+[ebrowse-ms "keyPressEvent" () 0 () "     void keyPressEvent(QKeyEvent" 374 2  () "void MainWindow::keyPressEvent(QKeyEvent" 3908]
+[ebrowse-ms "metaObject" () 4 () () 0 0  "moc_mainwindow.cpp" "const QMetaObject *MainWindow::metaObject()" 1382]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  "moc_mainwindow.cpp" "int MainWindow::qt_metacall(QMetaObject" 1717]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  "moc_mainwindow.cpp" "void *MainWindow::qt_metacast(const" 1459]
+[ebrowse-ms "~MainWindow" () 0 () "     ~MainWindow()" 289 2  () "MainWindow::~MainWindow()" 492]
+)
+()
+()
+()
+()
+()()
+])()
+()
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "*Globals*" () 0() () 0"#contourframe.h#" ]
+()([ebrowse-ms "LANG_CHINESE" () 0 () () 0 0  "contour.rc" "LANGUAGE LANG_CHINESE," 599]
+[ebrowse-ms "Num" () 0 () () 0 0  "cscope.out" " = 50;" 814]
+[ebrowse-ms "_b" () 0 () () 0 0  "cscope.out" "	m__ùy³_b
+;" 273098]
+[ebrowse-ms "_hasShowGrid" () 0 () () 0 0  "cscope.out" "çl£
+;" 794]
+[ebrowse-ms "_out" () 0 () () 0 0  "cscope.out" "yMax
+));" 2907]
+[ebrowse-ms "_showGrid" () 0 () () 0 0  "cscope.out" "Œue
+;" 691]
+[ebrowse-ms "_t" () 0 () () 0 0  "cscope.out" "	t__loÿË_t
+;" 273199]
+[ebrowse-ms "_tou" () 0 () () 0 0  "cscope.out" "	m__ùy³_touµ”
+;" 273152]
+[ebrowse-ms "a" () 0 () () 0 0  "cscope.out" "	g__gcÚv_Œªs_d©a
+;" 290721]
+[ebrowse-ms "cursive_t" () 0 () () 0 0  "cscope.out" "	t__libc_lock_»cursive_t
+;" 274072]
+[ebrowse-ms "d" () 0 () () 0 0  "cscope.out" "Œue
+;" 2335]
+[ebrowse-ms "ded_obje" () 0 () () 0 0  "cscope.out" "	g__gcÚv_lßded_objeù
+;" 290696]
+[ebrowse-ms "e_t" () 0 () () 0 0  "cscope.out" "	tmb¡©e_t
+;" 293993]
+[ebrowse-ms "fo" () 0 () () 0 0  "cscope.out" " = info;" 3065]
+[ebrowse-ms "i" () 0 () () 0 0  "cscope.out" "i
+=0;" 3414]
+[ebrowse-ms "lC" () 0 () () 0 0  "cscope.out" "Œue
+;" 666]
+[ebrowse-ms "lf" () 0 () () 0 0  "cscope.out" "THREAD_SELF
+;" 280862]
+[ebrowse-ms "m__cou" () 0 () () 0 0  "cscope.out" "	m__couÁ
+;" 293748]
+[ebrowse-ms "m__wch" () 0 () () 0 0  "cscope.out" "	m__wch
+;" 293828]
+[ebrowse-ms "m__wchb" () 0 () () 0 0  "cscope.out" "[4];" 293848]
+[ebrowse-ms "mes" () 0 () () 0 0  "cscope.out" "[13];" 273178]
+[ebrowse-ms "ow" () 0 () () 0 0  "cscope.out" "	m__ùy³_tÞow”
+;" 273125]
+[ebrowse-ms "r" () 0 () () 0 0  "cscope.out" "CÚtourT¿ûr
+;" 597]
+[ebrowse-ms "rows" () 0 () () 0 0  "cscope.out" ".rows;" 2670]
+[ebrowse-ms "s" () 0 () () 0 0  "cscope.out" ".cols;" 2634]
+[ebrowse-ms "su" () 0 () () 0 0  "cscope.out" "»suÉ
+;" 281067]
+[ebrowse-ms "t" () 0 () () 0 0  "cscope.out" "çl£
+;" 738]
+[ebrowse-ms "t__libc_key_t" () 0 () () 0 0  "cscope.out" "	t__libc_key_t
+;" 274160]
+[ebrowse-ms "t__libc_lock_t" () 0 () () 0 0  "cscope.out" "	t__libc_lock_t
+;" 274007]
+[ebrowse-ms "t__libc_rwlock_t" () 0 () () 0 0  "cscope.out" "	t__libc_rwlock_t
+;" 274123]
+[ebrowse-ms "t_t" () 0 () () 0 0  "cscope.out" "	twšt_t
+;" 293587]
+[ebrowse-ms "ue" () 0 () () 0 0  "cscope.out" "	m__v®ue
+;" 293866]
+[ebrowse-ms "xM" () 0 () () 0 0  "cscope.out" " = xMin;" 2931]
+[ebrowse-ms "xMax" () 0 () () 0 0  "cscope.out" " = xMax;" 2956]
+[ebrowse-ms "yM" () 0 () () 0 0  "cscope.out" " = yMin;" 2980]
+[ebrowse-ms "yMax" () 0 () () 0 0  "cscope.out" " = yMax;" 3005]
+[ebrowse-ms "zM" () 0 () () 0 0  "cscope.out" ".zMin;" 2563]
+[ebrowse-ms "zMax" () 0 () () 0 0  "cscope.out" ".zMax;" 2599]
+)
+([ebrowse-ms "_" () 0 "cscope.out" " (
+±h" 285995 0  () () 0]
+[ebrowse-ms "_" () 0 "cscope.out" "	`__±h»ad_mu‹x©Œ_š™
+ (&" 278053 0  () () 0]
+[ebrowse-ms "_LIBC" () 0 "cscope.out" " && (!" 274568 0  "cscope.out" " && (!" 278621]
+[ebrowse-ms "__LT_SPINLOCK_INIT" () 0 "cscope.out" "CLASS" 274940 0  () () 0]
+[ebrowse-ms "__USING_NAMESPACE_C99" () 0 "cscope.out" "(
+mb" 294080 0  () () 0]
+[ebrowse-ms "__USING_NAMESPACE_STD" () 0 "cscope.out" "(
+tm" 294437 0  () () 0]
+[ebrowse-ms "a" () 0 "cscope.out" "	`£tSÿ‰”D©a
+(*" 2695 0  () () 0]
+[ebrowse-ms "aInfo" () 0 "cscope.out" "_gridD" 3238 0  () () 0]
+[ebrowse-ms "ad_" () 0 "cscope.out" " (
+±h" 286918 0  () () 0]
+[ebrowse-ms "ad_key_" () 0 "cscope.out" " (
+±h" 286704 0  () () 0]
+[ebrowse-ms "ad_rwlock_" () 0 "cscope.out" " (
+±h" 286213 0  () () 0]
+[ebrowse-ms "ad_rwlock_rdlock" () 0 "cscope.out" " (
+±h" 286384 0  () () 0]
+[ebrowse-ms "c" () 0 "cscope.out" "	`cÚÃù
+(
+v" 1790 0  () () 0]
+[ebrowse-ms "c" () 0 "cscope.out" "	`cÚÃù
+(
+v" 1657 0  () () 0]
+[ebrowse-ms "c" () 0 "cscope.out" "	`cÚÃù
+(
+v" 1433 0  () () 0]
+[ebrowse-ms "c" () 0 "cscope.out" "	`cÚÃù
+(
+v" 1201 0  () () 0]
+[ebrowse-ms "c" () 0 "cscope.out" "	`cÚÃù
+(
+v" 1086 0  () () 0]
+[ebrowse-ms "c" () 0 "cscope.out" "	`cÚÃù
+(
+h" 969 0  () () 0]
+[ebrowse-ms "dowT" () 0 "cscope.out" "(\"Contour Tracing\"" 467 0  () () 0]
+[ebrowse-ms "drawGridPoints" () 0 "curveitem.h" "  void drawGridPoints(GridData" 128 0  () () 0]
+[ebrowse-ms "ecific" () 0 "cscope.out" " (
+±h" 286871 0  () () 0]
+[ebrowse-ms "ecific" () 0 "cscope.out" " (
+±h" 286790 0  () () 0]
+[ebrowse-ms "g" () 0 "cscope.out" "	`Œacšg
+()" 3107 0  () () 0]
+[ebrowse-ms "g" () 0 "cscope.out" "	`£tGriddšg
+(
+_" 2733 0  () () 0]
+[ebrowse-ms "h" () 0 "cscope.out" " (
+sym" 287180 0  () () 0]
+[ebrowse-ms "i" () 0 "cscope.out" "DOIT" 284318 0  () () 0]
+[ebrowse-ms "i" () 0 "cscope.out" "374 ià((" 283200 0  () () 0]
+[ebrowse-ms "i" () 0 "cscope.out" "257 ià((" 279928 0  () () 0]
+[ebrowse-ms "icy" () 0 "cscope.out" "(
+Qt" 869 0  () () 0]
+[ebrowse-ms "k" () 0 "cscope.out" " ((" 286998 0  () () 0]
+[ebrowse-ms "l" () 0 "cscope.out" "	`š™Ÿl
+()" 829 0  () () 0]
+[ebrowse-ms "lessThan" () 0 "contourview.cpp" "bool lessThan(const" 401 0  "contourview.cpp" "bool lessThan(const" 401]
+[ebrowse-ms "lus" () 0 "cscope.out" "	#__tÞow”_l
+(
+c" 263454 0  "cscope.out" "	#__tÞow”_l
+(
+c" 263454]
+[ebrowse-ms "main" () 0 "main.cpp" "int main(int" 297 0  "main.cpp" "int main(int" 297]
+[ebrowse-ms "me" () 0 "cscope.out" "	$CÚtourF¿me
+()" 2245 0  () () 0]
+[ebrowse-ms "me" () 0 "cscope.out" "(
+QF" 343 0  () () 0]
+[ebrowse-ms "nup_p" () 0 "cscope.out" " (
+_" 283529 0  () () 0]
+[ebrowse-ms "ock" () 0 "cscope.out" " (
+±h" 285938 0  () () 0]
+[ebrowse-ms "ock" () 0 "cscope.out" "	`Îl_uÆock
+ ((" 281909 0  () () 0]
+[ebrowse-ms "r" () 0 "cscope.out" " (
+_" 283613 0  "cscope.out" " (
+_" 283613]
+[ebrowse-ms "r" () 0 "cscope.out" "	`þ—r
+()" 3090 0  () () 0]
+[ebrowse-ms "roy" () 0 "cscope.out" " (
+±h" 285764 0  () () 0]
+[ebrowse-ms "roy" () 0 "cscope.out" "	`__±h»ad_mu‹x©Œ_de¡roy
+ (&" 278225 0  () () 0]
+[ebrowse-ms "t" () 0 "cscope.out" " (
+wch" 294736 0  () () 0]
+[ebrowse-ms "tTy" () 0 "cscope.out" "(
+Co" 499 0  () () 0]
+[ebrowse-ms "t_t" () 0 "cscope.out" "	$wšt_t
+ (*" 290866 0  () () 0]
+[ebrowse-ms "ut" () 0 "cscope.out" "	`£tIÅut
+(*" 3274 0  () () 0]
+[ebrowse-ms "x_" () 0 "cscope.out" " (
+±h" 285661 0  () () 0]
+[ebrowse-ms "x_" () 0 "cscope.out" "	`__±h»ad_mu‹x_š™
+ (&" 278163 0  () () 0]
+[ebrowse-ms "x_lock" () 0 "cscope.out" " (
+±h" 285880 0  () () 0]
+[ebrowse-ms "y" () 0 "cscope.out" " (
+wch" 294607 0  () () 0]
+[ebrowse-ms "y" () 0 "cscope.out" " (
+±h" 286115 0  () () 0]
+[ebrowse-ms "y" () 0 "cscope.out" "	`__±h»ad_mu‹x©Œ_£‰y³
+ (&" 278095 0  () () 0]
+[ebrowse-ms "ylock" () 0 "cscope.out" " (
+±h" 285823 0  () () 0]
+[ebrowse-ms "yrdlock" () 0 "cscope.out" " (
+±h" 286451 0  () () 0]
+)
+([ebrowse-ms "qt_meta_data_ColorFrame" () 0 () () 0 0  "moc_colorruler.cpp" "       0        // eod
+};" 1011]
+[ebrowse-ms "qt_meta_data_ColormapEdit" () 0 () () 0 0  "moc_colormapedit.cpp" "       0        // eod
+};" 1533]
+[ebrowse-ms "qt_meta_data_ContourFrame" () 0 () () 0 0  "moc_contourframe.cpp" "       0        // eod
+};" 1574]
+[ebrowse-ms "qt_meta_data_ContourScene" () 0 () () 0 0  "moc_contourscene.cpp" "       0        // eod
+};" 1012]
+[ebrowse-ms "qt_meta_data_ContourView" () 0 () () 0 0  "moc_contourview.cpp" "       0        // eod
+};" 1164]
+[ebrowse-ms "qt_meta_data_Coordinate" () 0 () () 0 0  "moc_coordinate.cpp" "       0        // eod
+};" 1090]
+[ebrowse-ms "qt_meta_data_HelpDialog" () 0 () () 0 0  "moc_helpdialog.cpp" "       0        // eod
+};" 1097]
+[ebrowse-ms "qt_meta_data_MainWindow" () 0 () () 0 0  "moc_mainwindow.cpp" "       0        // eod
+};" 1090]
+[ebrowse-ms "qt_meta_data_TraceDialog" () 0 () () 0 0  "moc_tracesetdialog.cpp" "       0        // eod
+};" 1246]
+[ebrowse-ms "qt_meta_stringdata_ColorFrame" () 0 () () 0 0  "moc_colorruler.cpp" "    \"ColorFrame\\0\"
+};" 1088]
+[ebrowse-ms "qt_meta_stringdata_ColormapEdit" () 0 () () 0 0  "moc_colormapedit.cpp" "updateColormap()\\0index\\0resetMap(int)\\0\"
+};" 1848]
+[ebrowse-ms "qt_meta_stringdata_ContourFrame" () 0 () () 0 0  "moc_contourframe.cpp" "    \"setHorizonBar()\\0setVerticalBar()\\0\"
+};" 2028]
+[ebrowse-ms "qt_meta_stringdata_ContourScene" () 0 () () 0 0  "moc_contourscene.cpp" "    \"ContourScene\\0\"
+};" 1093]
+[ebrowse-ms "qt_meta_stringdata_ContourView" () 0 () () 0 0  "moc_contourview.cpp" "    \"x,y\\0indexChanged(int,int)\\0\"
+};" 1400]
+[ebrowse-ms "qt_meta_stringdata_Coordinate" () 0 () () 0 0  "moc_coordinate.cpp" "    \"addjust(float,float,float,float)\\0\"
+};" 1234]
+[ebrowse-ms "qt_meta_stringdata_HelpDialog" () 0 () () 0 0  "moc_helpdialog.cpp" "    \"HelpDialog\\0\\0showHtml()\\0\"
+};" 1188]
+[ebrowse-ms "qt_meta_stringdata_MainWindow" () 0 () () 0 0  "moc_mainwindow.cpp" "    \"MainWindow\\0\\0about()\\0\"
+};" 1178]
+[ebrowse-ms "qt_meta_stringdata_TraceDialog" () 0 () () 0 0  "moc_tracesetdialog.cpp" "leanAllValue()\\0toDefault()\\0getList()\\0\"
+};" 1402]
+)
+()
+([ebrowse-ms "APSTUDIO_READONLY_SYMBOLS" () 512 () () 0 0  "contour.rc" "#define APSTUDIO_READONLY_SYMBOLS" 116]
+[ebrowse-ms "CONTOURFRAME_H" () 512 () () 0 0  "contourframe.h" "#define CONTOURFRAME_H" 47]
+[ebrowse-ms "CONTOURSCENE_H" () 512 () () 0 0  "contourscene.h" "#define CONTOURSCENE_H" 47]
+[ebrowse-ms "CONTOURSTRUCT_H" () 512 () () 0 0  "contourstruct.h" "#define CONTOURSTRUCT_H" 49]
+[ebrowse-ms "CONTOURTRACER_H" () 512 () () 0 0  "contourtracer.h" "#define CONTOURTRACER_H" 49]
+[ebrowse-ms "CONTOURVIEW_H" () 512 () () 0 0  "contourview.h" "#define CONTOURVIEW_H" 196]
+[ebrowse-ms "COORDINATE_H" () 512 () () 0 0  "coordinate.h" "#define COORDINATE_H" 43]
+[ebrowse-ms "CURVEITEM_H" () 512 () () 0 0  "curveitem.h" "#define CURVEITEM_H" 41]
+[ebrowse-ms "GRGB" () 512 () () 0 0  "contourview.cpp" "#define GRGB(" 334]
+[ebrowse-ms "IDB_BITMAP1" () 512 () () 0 0  "resource1.h" "#define IDB_BITMAP1 " 119]
+[ebrowse-ms "IDI_ICON1" () 512 () () 0 0  "resource2.h" "#define IDI_ICON1 " 117]
+[ebrowse-ms "INTERPOSE_NUM" () 512 () () 0 0  "contourstruct.h" "#define INTERPOSE_NUM " 325]
+[ebrowse-ms "MAINWINDOW_H" () 512 () () 0 0  "mainwindow.h" "#define MAINWINDOW_H" 43]
+[ebrowse-ms "MixTicks" () 512 () () 0 0  "coordinate.h" "#define MixTicks " 165]
+[ebrowse-ms "SCENEHEIGHT" () 512 () () 0 0  "contourstruct.h" "#define SCENEHEIGHT " 249]
+[ebrowse-ms "SCENEWIDTH" () 512 () () 0 0  "contourstruct.h" "#define SCENEWIDTH " 224]
+[ebrowse-ms "UI_COLORMAPEDIT_H" () 512 () () 0 0  "ui_colormapedit.h" "#define UI_COLORMAPEDIT_H
+" 451]
+[ebrowse-ms "UI_CONTOURFRAME_H" () 512 () () 0 0  "ui_contourframe.h" "#define UI_CONTOURFRAME_H
+" 451]
+[ebrowse-ms "UI_HELPDIALOG_H" () 512 () () 0 0  "ui_helpdialog.h" "#define UI_HELPDIALOG_H
+" 445]
+[ebrowse-ms "UI_RANDSET_H" () 512 () () 0 0  "ui_randset.h" "#define UI_RANDSET_H
+" 436]
+[ebrowse-ms "UI_TRACE_H" () 512 () () 0 0  "ui_trace.h" "#define UI_TRACE_H
+" 430]
+[ebrowse-ms "XJUMP" () 512 () () 0 0  "contourtracer.cpp" "#define XJUMP " 83]
+[ebrowse-ms "YJUMP" () 512 () () 0 0  "contourtracer.cpp" "#define YJUMP " 100]
+[ebrowse-ms "_APS_NEXT_COMMAND_VALUE" () 512 () () 0 0  "resource.h" "#define _APS_NEXT_COMMAND_VALUE " 283]
+[ebrowse-ms "_APS_NEXT_CONTROL_VALUE" () 512 () () 0 0  "resource.h" "#define _APS_NEXT_CONTROL_VALUE " 330]
+[ebrowse-ms "_APS_NEXT_RESOURCE_VALUE" () 512 () () 0 0  "resource.h" "#define _APS_NEXT_RESOURCE_VALUE " 239]
+[ebrowse-ms "_APS_NEXT_SYMED_VALUE" () 512 () () 0 0  "resource.h" "#define _APS_NEXT_SYMED_VALUE " 374]
+)
+([ebrowse-ms "CCurveList" () 0 () () 0 0  "contourstruct.h" "typedef QVector<CCurve*> CCurveList;" 3425]
+)
+()()
+][ebrowse-ts [ebrowse-cs "HelpDialog" () 0() () 0"moc_helpdialog.cpp" ]
+()([ebrowse-ms "staticMetaObject" () 0 () () 0 0  () "      qt_meta_data_HelpDialog, 0 }
+};" 1343]
+)
+([ebrowse-ms "metaObject" () 4 () () 0 0  () "const QMetaObject *HelpDialog::metaObject()" 1388]
+[ebrowse-ms "qt_metacall" () 0 () () 0 0  () "int HelpDialog::qt_metacall(QMetaObject" 1841]
+[ebrowse-ms "qt_metacast" () 0 () () 0 0  () "void *HelpDialog::qt_metacast(const" 1465]
+)
+()
+()
+()
+()
+()()
+][ebrowse-ts [ebrowse-cs "IsoPoint" "ContourTracer" 0"contourtracer.h" "    {" 452"contourtracer.h" ]
+()([ebrowse-ms "bHorV" () 0 () "	bool bHorV;" 484 0  () () 0]
+[ebrowse-ms "i" () 0 () "	int i;" 461 0  () () 0]
+[ebrowse-ms "j" () 0 () "	int j;" 470 0  () () 0]
+[ebrowse-ms "x" () 0 () "	float x;" 496 0  () () 0]
+[ebrowse-ms "y" () 0 () "	float y;" 508 0  () () 0]
+)
+([ebrowse-ms "IsoPoint" () 0 () "	IsoPoint(){" 521 0  () "	IsoPoint(){" 521]
+)
+()
+()
+()
+()
+()()
+]

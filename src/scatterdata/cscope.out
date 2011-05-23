@@ -1,0 +1,2715 @@
+cscope 15 /data/work/own/contour/src/scatterdata               0000012309
+	@main.cpp
+
+1 
+	~<QtGui/QAµliÿtiÚ
+>
+
+2 
+	~<c¡dlib
+>
+
+3 
+	~<QDebug
+>
+
+4 
+	~"../m©rix/m©rix.h
+"
+
+5 
+	~"sÿ‰”d©a.h
+"
+
+8 
+	$maš
+(
+¬gc
+,*
+¬gv
+[])
+
+10 
+QAµliÿtiÚ
+ 
+	`a
+(
+¬gc
+, 
+¬gv
+);
+
+12 
+M©rix
+ 
+sd
+ = 
+Sÿ‰”D©a
+::
+	`¿ndSÿ‰”D©a
+(80,100,20,40,300,500,15);
+
+13 
+	`qDebug
+()<<
+sd
+.
+	`toSŒšg
+().
+	`d©a
+();
+
+14 
+Sÿ‰”D©a
+ 
+İ
+;
+
+15 
+İ
+.
+	`£tSÿ‰”D©a
+(
+sd
+);
+
+16 
+İ
+.
+	`£tGriddšg
+(10,10);
+
+18 
+mšX
+,
+maxX
+,
+mšY
+,
+maxY
+;
+
+20 
+M©rix
+ 
+out
+ = 
+İ
+.
+	`g‘Griddšg
+(
+mšX
+,
+maxX
+,
+mšY
+,
+maxY
+);
+
+21 
+	`qDebug
+()<<
+out
+.
+	`toSŒšg
+().
+	`d©a
+();
+
+22 
+İ
+.
+	`toFe
+("/root/op.grd");
+
+23  
+a
+.
+	`exec
+();
+
+24 
+	}
+}
+
+	@scatterdata.cpp
+
+1 
+	~"sÿ‰”d©a.h
+"
+
+2 
+	~"../cÚtour/cÚtour¡ruù.h
+"
+
+3 
+	~<c¡dlib
+>
+
+4 
+	~<f¡»am
+>
+
+5 
+	~<QDebug
+>
+
+7 
+	gSÿ‰”D©a
+::
+	$Sÿ‰”D©a
+()
+
+9 
+¦H
+ = 
+¦V
+ =100;
+
+10 
+	}
+}
+
+12 
+	gSÿ‰”D©a
+::
+	$Sÿ‰”D©a
+(
+M©rix
+ &
+d©a
+)
+
+14 
+¦H
+ = 
+¦V
+ =100;
+
+15 
+	`£tSÿ‰”D©a
+(
+d©a
+);
+
+16 
+	}
+}
+
+18 
+	gSÿ‰”D©a
+::~
+	$Sÿ‰”D©a
+()
+
+21 
+	}
+}
+
+24 
+Sÿ‰”D©a
+::
+	$£tSÿ‰”D©a
+(
+M©rix
+ &
+d©a
+)
+
+27 
+sÿ‰”D©a
+ = &
+d©a
+;
+
+28 
+mšX
+ = 
+maxX
+ = 
+d©a
+[0][0];
+
+29 
+mšY
+ = 
+maxY
+ = 
+d©a
+[0][1];
+
+30 
+mšZ
+ = 
+maxZ
+ = 
+d©a
+[0][2];
+
+32 
+i
+=0;i<
+d©a
+.
+	`g‘RowCouÁ
+();i++){
+
+33 if(
+mšX
+ > 
+d©a
+[
+i
+][0])
+
+34 
+mšX
+ = 
+d©a
+[
+i
+][0];
+
+35 if(
+d©a
+[
+i
+][0]>
+maxX
+)
+
+36 
+maxX
+ = 
+d©a
+[
+i
+][0];
+
+38 if(
+mšY
+ > 
+d©a
+[
+i
+][1])
+
+39 
+mšY
+ = 
+d©a
+[
+i
+][1];
+
+40 if(
+maxY
+ < 
+d©a
+[
+i
+][1])
+
+41 
+maxY
+ = 
+d©a
+[
+i
+][1];
+
+43 if(
+mšZ
+ > 
+d©a
+[
+i
+][2])
+
+44 
+mšZ
+ = 
+d©a
+[
+i
+][2];
+
+45 if(
+maxZ
+ < 
+d©a
+[
+i
+][2])
+
+46 
+maxZ
+ = 
+d©a
+[
+i
+][2];
+
+48 
+width
+ = 
+maxX
+ -
+mšX
+;
+
+49 
+height
+ = 
+maxY
+ - 
+mšY
+;
+
+52 
+mšX
+ = mšX - 
+width
+/100;
+
+53 
+maxX
+ = maxX + 
+width
+/100;
+
+54 
+mšY
+ = mšY - 
+height
+/100;
+
+55 
+maxY
+ = maxY + 
+height
+/100;
+
+56 
+width
+ = 
+maxX
+ -
+mšX
+;
+
+57 
+height
+ = 
+maxY
+ - 
+mšY
+;
+
+58 
+	}
+}
+
+60 
+	gSÿ‰”D©a
+::
+	$£tGriddšg
+(
+hÜizÚl
+,
+v”tiÿl
+)
+
+62 
+¦H
+ = 
+hÜizÚl
+;
+
+63 
+¦V
+ = 
+v”tiÿl
+;
+
+64 
+	}
+}
+
+66 
+	gM©rix
+& 
+	gSÿ‰”D©a
+::
+	$g‘Griddšg
+(&
+pmšX
+,&
+pmaxX
+,&
+pmšY
+,&
+pmaxY
+)
+
+69 
+M©rix
+ 
+	`X
+((*
+sÿ‰”D©a
+).
+	`g‘RowCouÁ
+(),10);
+
+70 
+M©rix
+ 
+	`Z
+((*
+sÿ‰”D©a
+).
+	`g‘RowCouÁ
+(),1);
+
+71 
+griddšgD©a
+ = 
+Ãw
+ 
+	`M©rix
+(
+¦H
+,
+¦V
+);
+
+73 
+x
+,
+y
+;
+
+74 
+i
+=0;i<(*
+sÿ‰”D©a
+).
+	`g‘RowCouÁ
+();i++)
+
+76 
+x
+ = (*
+sÿ‰”D©a
+)[
+i
+][0];
+
+77 
+y
+ = (*
+sÿ‰”D©a
+)[
+i
+][1];
+
+78 
+Z
+[
+i
+][0] = (*
+sÿ‰”D©a
+)[i][2];
+
+80 
+X
+[
+i
+][0]=1;
+
+81 
+X
+[
+i
+][1]ğ
+x
+;
+
+82 
+X
+[
+i
+][2]=
+y
+;
+
+83 
+X
+[
+i
+][3]=
+x
+*x;
+
+84 
+X
+[
+i
+][4]=
+x
+*
+y
+;
+
+85 
+X
+[
+i
+][5]=
+y
+*y;
+
+86 
+X
+[
+i
+][6]=X[i][3]*
+x
+;
+
+87 
+X
+[
+i
+][7]=X[i][3]*
+y
+;
+
+88 
+X
+[
+i
+][8]=
+x
+*X[i][5];
+
+89 
+X
+[
+i
+][9]=X[i][5]*
+y
+;
+
+94 
+M©rix
+ 
+A
+ = ((
+X
+.
+	`T
+()*X).
+	`šv
+())*(X.T())*
+Z
+;
+
+96 
+¡•X
+ = 
+width
+/
+¦H
+;
+
+97 
+¡•Y
+ = 
+height
+/
+¦V
+;
+
+98 
+i
+=0;i<(*
+sÿ‰”D©a
+).
+	`g‘RowCouÁ
+();i++)
+
+100 
+x
+ = (*
+sÿ‰”D©a
+)[
+i
+][0];
+
+101 
+y
+ = (*
+sÿ‰”D©a
+)[
+i
+][1];
+
+102 
+z
+ = (*
+sÿ‰”D©a
+)[
+i
+][2];
+
+103 
+ww
+ = 
+A
+[0][0] + A[1][0]*
+x
+ + A[2][0]*
+y
+ + A[3][0]*x*x
+
+104 + 
+A
+[4][0]*
+x
+*
+y
+ + A[5][0]*y*y + A[6][0]*x*x*x +A[7][0]*x*x*y
+
+105 + 
+A
+[8][0]*
+x
+*
+y
+*y + A[9][0]*y*y*y;
+
+108 
+i
+=0;i<(*
+griddšgD©a
+).
+	`g‘RowCouÁ
+();i++)
+
+109 
+j
+=0;j<(*
+griddšgD©a
+).
+	`g‘CŞCouÁ
+();j++)
+
+111 
+x
+ = 
+mšX
+ + 
+i
+*
+¡•X
+;
+
+112 
+y
+ = 
+mšY
+ + 
+j
+*
+¡•Y
+;
+
+113 (*
+griddšgD©a
+)[
+i
+][
+j
+] = 
+A
+[0][0] + A[1][0]*
+x
+ + A[2][0]*
+y
+ + A[3][0]*x*x
+
+114 + 
+A
+[4][0]*
+x
+*
+y
+ + A[5][0]*y*y + A[6][0]*x*x*x +A[7][0]*x*x*y
+
+115 + 
+A
+[8][0]*
+x
+*
+y
+*y + A[9][0]*y*y*y;
+
+116 
+ww
+ = (*
+griddšgD©a
+)[
+i
+][
+j
+];
+
+118 
+pmšX
+ = 
+this
+->
+mšX
+;
+
+119 
+pmaxX
+ = 
+this
+->
+maxX
+;
+
+120 
+pmšY
+ = 
+this
+->
+mšY
+;
+
+121 
+pmaxY
+ = 
+this
+->
+maxY
+;
+
+123  (*
+griddšgD©a
+);
+
+124 
+	}
+}
+
+126 
+	gM©rix
+& 
+	gSÿ‰”D©a
+::
+	$g‘Griddšg
+()
+
+128 
+a
+,
+b
+,
+c
+,
+d
+;
+
+129  
+	`g‘Griddšg
+(
+a
+,
+b
+,
+c
+,
+d
+);
+
+130 
+	}
+}
+
+133 
+	gSÿ‰”D©a
+::
+	$g‘Rªge
+(&
+pmšX
+,&
+pmaxX
+,&
+pmšY
+,&
+pmaxY
+)
+
+135 
+pmšX
+ = 
+this
+->
+mšX
+;
+
+136 
+pmaxX
+ = 
+this
+->
+maxX
+;
+
+137 
+pmšY
+ = 
+this
+->
+mšY
+;
+
+138 
+pmaxY
+ = 
+this
+->
+maxY
+;
+
+139 
+	}
+}
+
+142 
+	gM©rix
+& 
+	gSÿ‰”D©a
+::
+	$¿ndSÿ‰”D©a
+(
+pmšX
+,
+pmaxX
+,
+pmšY
+,
+pmaxY
+,
+
+143 
+pmšZ
+,
+pmaxZ
+ ,
+n
+)
+
+145 
+	`¤ªd
+(
+	`time
+(
+NULL
+));
+
+146 
+M©rix
+ &
+tm©rix
+ = *(
+Ãw
+ 
+	`M©rix
+(
+n
+,3));
+
+147 
+i
+=0;i<
+n
+;i++)
+
+149 
+tm©rix
+[
+i
+][0] = 
+pmšX
+ + 
+	`¿nd
+()/()
+RAND_MAX
+*(
+pmaxX
+ -…minX);
+
+150 
+tm©rix
+[
+i
+][1] = 
+pmšY
+ + 
+	`¿nd
+()/()
+RAND_MAX
+*(
+pmaxY
+ -…minY);
+
+151 
+tm©rix
+[
+i
+][2] = 
+pmšZ
+ + 
+	`¿nd
+()/()
+RAND_MAX
+*(
+pmaxZ
+ -…minZ);
+
+153  
+tm©rix
+;
+
+154 
+	}
+}
+
+156 
+	gSÿ‰”D©a
+::
+toGridFe
+(
+¡d
+::
+¡ršg
+ 
+Çme
+)
+
+158 
+¡d
+::
+of¡»am
+ 
+fe
+(
+Çme
+.
+c_¡r
+());
+
+159 if(!
+	gfe
+){
+
+160 
+	g¡d
+::
+û¼
+<<"ÿÀnÙ o³Àfe:"<<
+Çme
+<<" for writting.";
+
+162 
+	gfe
+<<"DSAA\n";
+
+163 
+	gfe
+<<
+	g¦V
+<<" "<<
+	g¦H
+<<"\n";
+
+164 
+	gfe
+<<
+	gmšX
+<<" "<<
+	gmaxX
+<<"\n";
+
+165 
+	gfe
+<<
+	gmšY
+<<" "<<
+	gmaxY
+<<"\n";
+
+166 
+	gfe
+<<
+	gmšZ
+<<" "<<
+	gmaxZ
+<<"\n";
+
+167 
+	gn
+=1;
+
+168 
+	gi
+=0;i<
+	ggriddšgD©a
+->
+g‘RowCouÁ
+();i++)
+
+169 
+	gj
+=0;j<
+	ggriddšgD©a
+->
+g‘CŞCouÁ
+();j++,
+	gn
+++)
+
+171 
+	gfe
+<<(*
+	ggriddšgD©a
+)[
+i
+][
+j
+]<<" ";
+
+172 if(
+	gn
+%10 == 0)
+
+173 
+fe
+<<"\n";
+
+175 
+	gfe
+.
+şo£
+();
+
+177 
+	gSÿ‰”D©a
+::
+toSÿ‰”Fe
+(
+¡d
+::
+¡ršg
+ 
+Çme
+)
+
+179 
+¡d
+::
+of¡»am
+ 
+fe
+(
+Çme
+.
+c_¡r
+());
+
+180 if(!
+	gfe
+){
+
+181 
+	g¡d
+::
+û¼
+<<"ÿÀnÙ o³Àfe:"<<
+Çme
+<<" for writting.";
+
+183 
+	gfe
+<<"SSAA\n";
+
+184 
+	gfe
+<<
+	gsÿ‰”D©a
+->
+g‘RowCouÁ
+()<<"\n";
+
+186 
+	gj
+=0;j<
+	gsÿ‰”D©a
+->
+g‘RowCouÁ
+();j++)
+
+188 
+	gfe
+<<(*
+	gsÿ‰”D©a
+)[
+j
+][0]<<" "<<
+
+189 (*
+	gsÿ‰”D©a
+)[
+j
+][1]<<" "<<(*scatterData)[j][2]<<"\n";
+
+191 
+	gfe
+.
+şo£
+();
+
+194 
+boŞ
+ 
+	gSÿ‰”D©a
+::
+»adSÿ‰”Fe
+(
+¡d
+::
+¡ršg
+ 
+Çme
+,
+M©rix
+ **
+d©a
+)
+
+196 
+	g¡d
+::
+if¡»am
+ 
+fe
+(
+Çme
+.
+c_¡r
+());
+
+197 if(!
+	gfe
+){
+
+198 
+	g¡d
+::
+û¼
+<<"ÿÀnÙ o³Àfe:"<<
+Çme
+<<" for writting.";
+
+199  
+	gçl£
+;
+
+201 
+	g¡d
+::
+¡ršg
+ 
+ty³
+;
+
+202 
+	gfe
+>>
+	gty³
+;
+
+203 if(
+	gty³
+ != "SSAA"){
+
+204 
+¡d
+::
+û¼
+<<"this is‚ot‡ grd file!,return forced.";
+
+205  
+	gçl£
+;
+
+207 
+	grow
+;
+
+208 
+	gfe
+ >> 
+	grow
+;
+
+209 *
+	gd©a
+ = 
+Ãw
+ 
+M©rix
+(
+row
+,3);
+
+210 
+	gi
+ =0;i<
+	grow
+;i++)
+
+212 
+	gfe
+ >> (**
+	gd©a
+)[
+i
+][0];
+
+213 
+	gfe
+ >> (**
+	gd©a
+)[
+i
+][1];
+
+214 
+	gfe
+ >> (**
+	gd©a
+)[
+i
+][2];
+
+215 
+qDebug
+()<<(**
+	gd©a
+)[
+i
+][0]<<" "<<(**data)[i][1]<<" "<<(**data)[i][2];
+
+217 
+	gfe
+.
+şo£
+();
+
+218  
+	gŒue
+;
+
+221 
+boŞ
+ 
+	gSÿ‰”D©a
+::
+»adGridFe
+(
+¡d
+::
+¡ršg
+ 
+Çme
+,
+GridD©a
+ &
+d©a
+)
+
+223 
+	g¡d
+::
+if¡»am
+ 
+fe
+(
+Çme
+.
+c_¡r
+());
+
+224 if(!
+	gfe
+){
+
+225 
+	g¡d
+::
+û¼
+<<"ÿÀnÙ o³Àfe:"<<
+Çme
+<<" for writting.";
+
+226  
+	gçl£
+;
+
+228 
+	g¡d
+::
+¡ršg
+ 
+ty³
+;
+
+229 
+	gfe
+>>
+	gty³
+;
+
+230 if(
+	gty³
+ != "DSAA"){
+
+231 
+¡d
+::
+û¼
+<<"this is‚ot‡ grd file!,return forced.";
+
+232  
+	gçl£
+;
+
+234 
+CGridD©aInfo
+ 
+	gšfo
+;
+
+235 
+M©rix
+ *
+	gm©
+;
+
+236 
+	gfe
+>>
+	gšfo
+.
+	gcŞs
+;
+
+237 
+	gfe
+>>
+	gšfo
+.
+	grows
+;
+
+238 if(
+	gšfo
+.
+	grows
+>0 && info.
+	gcŞs
+>0)
+
+239 
+	gm©
+ = 
+Ãw
+ 
+M©rix
+(
+šfo
+.
+rows
+,šfo.
+cŞs
+);
+
+240 
+	gfe
+>>
+	gšfo
+.
+	gxMš
+;
+
+241 
+	gfe
+>>
+	gšfo
+.
+	gxMax
+;
+
+242 
+	gfe
+>>
+	gšfo
+.
+	gyMš
+;
+
+243 
+	gfe
+>>
+	gšfo
+.
+	gyMax
+;
+
+244 
+	gfe
+>>
+	gšfo
+.
+	gzMš
+;
+
+245 
+	gfe
+>>
+	gšfo
+.
+	gzMax
+;
+
+246 
+	gi
+=0;i<
+	gšfo
+.
+	grows
+;i++)
+
+247 
+	gj
+=0;j<
+	gšfo
+.
+	gcŞs
+;j++)
+
+249 
+	gfe
+>> (*
+	gm©
+)[
+i
+][
+j
+];
+
+251 
+	gfe
+.
+şo£
+();
+
+252 
+	gd©a
+.d©¨ğ
+m©
+;
+
+253 
+	gd©a
+.
+	gšfo
+ = 
+šfo
+;
+
+254  
+	gŒue
+;
+
+	@scatterdata.h
+
+1 #iâdeà
+SCATTERDATA_H
+
+
+2 
+	#SCATTERDATA_H
+
+
+	)
+
+7 
+	~<QDebug
+>
+
+8 
+	~"../m©rix/m©rix.h
+"
+
+9 
+	~<¡ršg
+>
+
+11 
+	gGridD©a
+;
+
+13 şas 
+	cSÿ‰”D©a
+
+
+15 
+	mpublic
+:
+
+28 
+Sÿ‰”D©a
+(
+M©rix
+ &
+d©a
+);
+
+31 
+Sÿ‰”D©a
+();
+
+33 ~
+Sÿ‰”D©a
+();
+
+36 
+£tSÿ‰”D©a
+(
+M©rix
+ &
+d©a
+);
+
+39 
+£tGriddšg
+(
+hÜizÚl
+,
+v”tiÿl
+);
+
+59 
+	mM©rix
+& 
+g‘Griddšg
+(&
+pmšX
+,&
+pmaxX
+,&
+pmšY
+,&
+pmaxY
+);
+
+61 
+	mM©rix
+& 
+g‘Griddšg
+();
+
+63 
+g‘Rªge
+(&
+pmšX
+,&
+pmaxX
+,&
+pmšY
+,&
+pmaxY
+);
+
+69 
+	mM©rix
+& 
+¿ndSÿ‰”D©a
+(
+pmšX
+,
+pmaxX
+,
+pmšY
+,
+pmaxY
+,
+
+70 
+pmšZ
+,
+pmaxZ
+,
+n
+);
+
+73 
+toGridFe
+(
+¡d
+::
+¡ršg
+ 
+Çme
+);
+
+75 
+toSÿ‰”Fe
+(
+¡d
+::
+¡ršg
+ 
+Çme
+);
+
+77 
+boŞ
+ 
+»adGridFe
+(
+¡d
+::
+¡ršg
+ 
+Çme
+,
+GridD©a
+ &
+d©a
+);
+
+79 
+boŞ
+ 
+»adSÿ‰”Fe
+(
+¡d
+::
+¡ršg
+ 
+Çme
+,
+M©rix
+ **
+d©a
+);
+
+81 
+	m´iv©e
+:
+
+84 
+M©rix
+ *
+sÿ‰”D©a
+;
+
+85 
+M©rix
+ *
+	mgriddšgD©a
+;
+
+86 
+	m¦H
+;
+
+87 
+	m¦V
+;
+
+89 
+	mmšX
+;
+
+90 
+	mmaxX
+;
+
+91 
+	mmšY
+;
+
+92 
+	mmaxY
+;
+
+93 
+	mmšZ
+;
+
+94 
+	mmaxZ
+;
+
+95 
+	mwidth
+;
+
+96 
+	mheight
+;
+
+	@../contour/contourstruct.h
+
+1 #iâdeà
+CONTOURSTRUCT_H
+
+
+2 
+	#CONTOURSTRUCT_H
+
+
+	)
+
+4 
+	~<QPošt
+>
+
+5 
+	~<ÿs£¹
+>
+
+6 
+	~<cm©h
+>
+
+7 
+	~"../m©rix/m©rix.h
+"
+
+8 
+	~<QVeùÜ
+>
+
+9 
+	~<c¡dlib
+>
+
+10 
+	~<QDebug
+>
+
+12 
+	#SCENEWIDTH
+ 800
+
+	)
+
+13 
+	#SCENEHEIGHT
+ 800
+
+	)
+
+15 
+	sCGridD©aInfo
+
+
+17 
+	mrows
+;
+
+18 
+	mcŞs
+;
+
+19 
+	mxMš
+;
+
+20 
+	mxMax
+;
+
+21 
+	myMš
+;
+
+22 
+	myMax
+;
+
+23 
+	mzMš
+;
+
+24 
+	mzMax
+;
+
+26 
+CGridD©aInfo
+(){
+mem£t
+(
+this
+,0,(CGridDataInfo));}
+
+30 
+	sGridD©a
+
+
+32 
+M©rix
+ *
+	md©a
+;
+
+33 
+CGridD©aInfo
+ 
+	mšfo
+;
+
+35 
+GridD©a
+(){
+
+36 
+	md©a
+ = 
+NULL
+;
+
+42 şas 
+	cCCurve
+
+
+44 
+	mpublic
+:
+
+46 
+	eTy³
+{
+A
+,
+	mB
+,
+	mC
+,
+	mD
+,
+	mU
+};
+
+47 
+	eSTy³
+{
+	gDown
+,
+	gTİ
+,
+	gLeá
+,
+	gRight
+};
+
+48 
+	eCÜÃr
+{
+	gtİLeá
+,
+	gtİRight
+,
+	gbÙtomLeá
+,
+	gbÙtomRight
+};
+
+50 
+	gQVeùÜ
+<
+	gQPoštF
+> 
+	gd©a
+;
+
+51 
+	gv®ue
+;
+
+52 
+	gxMš
+;
+
+53 
+	gxMax
+;
+
+54 
+	gyMš
+;
+
+55 
+	gyMax
+;
+
+56 
+Ty³
+ 
+	gty³
+;
+
+57 
+STy³
+ 
+	g¡y³
+;
+
+59 
+	$CCurve
+(){
+
+60 
+xMš
+ = 
+yMš
+ =1000;
+
+61 
+xMax
+ = 
+yMax
+ = -1000;
+
+62 
+	}
+}
+
+65 
+CÜÃr
+ 
+	$g‘CÜÃr
+() const
+
+67 if(
+ty³
+ !ğ
+CCurve
+::
+A
+)
+
+68 
+	`as£¹
+("wrong");
+
+69 cÚ¡ 
+QPoštF
+ *
+Ï¡
+ = &(
+d©a
+[d©a.
+	`couÁ
+()-1]);
+
+70 if(
+¡y³
+ =ğ
+CCurve
+::
+Tİ
+)
+
+72 if(
+Ï¡
+->
+	`x
+() <=0.0001)
+
+73  
+tİLeá
+;
+
+75  
+tİRight
+;
+
+77 if(
+¡y³
+ =ğ
+CCurve
+::
+Down
+)
+
+79 if(
+Ï¡
+->
+	`x
+() <=0.0001)
+
+80  
+bÙtomLeá
+;
+
+82  
+bÙtomRight
+;
+
+85 if(
+¡y³
+ =ğ
+CCurve
+::
+Leá
+)
+
+87 if(
+Ï¡
+->
+	`y
+()<=0.0001)
+
+88  
+tİLeá
+;
+
+90  
+bÙtomLeá
+;
+
+92 if(
+¡y³
+ =ğ
+CCurve
+::
+Right
+)
+
+94 if(
+Ï¡
+->
+	`y
+()<=0.0001)
+
+95  
+tİRight
+;
+
+97  
+bÙtomRight
+;
+
+99 
+	}
+}
+
+101 
+q»®
+ 
+	$g‘CurveWidth
+() const
+
+103 if(
+ty³
+ =ğ
+CCurve
+::
+B
+)
+
+105 cÚ¡ 
+QPoštF
+ *
+fœ¡
+,*
+Ï¡
+;
+
+106 
+fœ¡
+ = &(
+d©a
+[0]);
+
+107 
+Ï¡
+ = &(
+d©a
+[d©a.
+	`couÁ
+()-1]);
+
+109 if(
+¡y³
+ =ğ
+CCurve
+::
+Tİ
+)
+
+111 if(
+Ï¡
+->
+	`x
+() <= 0.001)
+
+112  
+Ï¡
+->
+	`y
+(è+
+fœ¡
+->
+	`x
+();
+
+114  
+Ï¡
+->
+	`y
+(è+ 
+SCENEWIDTH
+ - 
+fœ¡
+->
+	`x
+();
+
+116 if(
+¡y³
+ =ğ
+CCurve
+::
+Down
+)
+
+118 if(
+Ï¡
+->
+	`x
+() <= 0.001)
+
+119  
+SCENEHEIGHT
+ - 
+Ï¡
+->
+	`y
+(è+ 
+fœ¡
+->
+	`x
+();
+
+121  
+SCENEHEIGHT
+ - 
+Ï¡
+->
+	`y
+(è+ 
+SCENEWIDTH
+ - 
+fœ¡
+->
+	`x
+();
+
+124 if(
+¡y³
+ =ğ
+CCurve
+::
+Leá
+)
+
+126 if(
+Ï¡
+->
+	`y
+() <= 0.001)
+
+127  
+fœ¡
+->
+	`y
+()+ 
+Ï¡
+->
+	`x
+();
+
+129  
+Ï¡
+->
+	`x
+(è+ 
+SCENEHEIGHT
+ -
+fœ¡
+->
+	`y
+() ;
+
+131 if(
+¡y³
+ =ğ
+CCurve
+::
+Right
+)
+
+133 if(
+Ï¡
+->
+	`y
+() <= 0.001)
+
+134  
+SCENEWIDTH
+ - 
+Ï¡
+->
+	`x
+()+
+fœ¡
+->
+	`y
+();
+
+136  
+SCENEWIDTH
+ - 
+Ï¡
+->
+	`x
+(è+ 
+SCENEHEIGHT
+ -
+fœ¡
+->
+	`y
+() ;
+
+140 if(
+ty³
+ =ğ
+CCurve
+::
+A
+)
+
+142 if(
+¡y³
+ =ğ
+CCurve
+::
+Tİ
+ || sty³ =ğCCurve::
+Down
+)
+
+144  
+	`çbs
+(
+d©a
+[d©a.
+	`couÁ
+()-1].
+	`x
+() - data[0].x());
+
+147 if(
+¡y³
+ =ğ
+CCurve
+::
+Leá
+||¡y³ =ğCCurve::
+Right
+)
+
+149  
+	`çbs
+(
+d©a
+[d©a.
+	`couÁ
+()-1].
+	`y
+() - data[0].y());
+
+153 
+	`as£¹
+("error");
+
+155 
+	}
+}
+
+160 
+	gQVeùÜ
+<
+	tCCurve
+*> 
+	tCCurveLi¡
+;
+
+163 şas 
+	cCÚv”£Pos
+
+
+165 
+	mpublic
+:
+
+166 
+QPoštF
+ 
+	$pos2sûÃ
+(
+x
+,
+y
+,
+CGridD©aInfo
+ *
+šfo
+)
+
+168 
+sx
+ = (
+x
+-
+šfo
+->
+xMš
+)/(šfo->
+xMax
+ - info->xMš)*
+SCENEWIDTH
+;
+
+169 
+sy
+ = 
+SCENEHEIGHT
+ - (
+y
+-
+šfo
+->
+yMš
+)/(šfo->
+yMax
+ - info->yMin)*SCENEHEIGHT;
+
+170 
+	`as£¹
+Ğ
+sx
+>=0&&sx<=
+SCENEWIDTH
+);
+
+171 
+	`as£¹
+(
+sy
+>=0&&sy<=
+SCENEHEIGHT
+);
+
+172  
+	`QPoštF
+Ğ(
+x
+-
+šfo
+->
+xMš
+)/(šfo->
+xMax
+ - info->xMš)*
+SCENEWIDTH
+,
+
+173 
+SCENEHEIGHT
+ - (
+y
+-
+šfo
+->
+yMš
+)/(šfo->
+yMax
+ - info->yMin)*SCENEHEIGHT);
+
+176 
+QPoštF
+ 
+	$pos2sûÃ
+(
+QPoštF
+ 
+pos
+,
+CGridD©aInfo
+ *
+šfo
+)
+
+178  
+	`pos2sûÃ
+(
+pos
+.
+	`x
+(),pos.
+	`y
+(),
+šfo
+);
+
+179 
+	}
+}
+
+	@../matrix/matrix.h
+
+1 #iâdeà
+MATRIX_H
+
+
+2 
+	#MATRIX_H
+
+
+	)
+
+3 
+	~<io¡»am
+>
+
+4 
+	~<QSŒšg
+>
+
+13 şas 
+	cM©rix
+
+
+15 
+	mpublic
+:
+
+18 
+M©rix
+();
+
+21 
+M©rix
+(
+n
+);
+
+23 
+M©rix
+(cÚ¡ M©rix &
+m
+);
+
+26 
+M©rix
+(
+rows
+,
+cŞs
+,
+num
+=0);
+
+28 ~
+M©rix
+();
+
+30 
+šlše
+ 
+	$g‘RowCouÁ
+()const {
+
+31  
+rows
+;
+
+34 
+šlše
+ 
+	$g‘CŞCouÁ
+()const {
+
+35  
+cŞs
+;
+
+36 
+	}
+}
+
+39 
+chªgeRow
+(
+row1
+,
+row2
+);
+
+43 
+	gM©rix
+& 
+uµ”TrŸngË
+(&
+numOfChªgeRows
+);
+
+45 
+	gM©rix
+& 
+	$uµ”TrŸngË
+(){
+
+46 
+a
+;
+
+47  
+	`uµ”TrŸngË
+(
+a
+);
+
+48 
+	}
+}
+
+51 
+	gM©rix
+& 
+šv
+();
+
+54 
+d‘
+();
+
+57 
+	gM©rix
+& 
+T
+();
+
+60 
+	gM©rix
+& 
+	gİ”©Ü
++(cÚ¡ M©rix &
+	gm
+);
+
+63 
+	gM©rix
+& 
+	gİ”©Ü
+-(cÚ¡ M©rix &
+	gm
+);
+
+66 
+	gM©rix
+& 
+	gİ”©Ü
+*(cÚ¡ M©rix &
+	gm
+);
+
+68 
+ä›nd
+ 
+	g¡d
+::
+o¡»am
+ &
+İ”©Ü
+<<(
+¡d
+::o¡»am&, cÚ¡ 
+	gM©rix
+&);
+
+71 * 
+	gİ”©Ü
+[](
+	gcŞ
+)const;
+
+74 
+	g¡d
+::
+¡ršg
+ 
+toSŒšg
+() ;
+
+76 
+	g´iv©e
+:
+
+77 ** 
+m©rix
+;
+
+78 
+	grows
+,
+	gcŞs
+;
+
+	@
+1
+.
+1
+/usr/include
+5
+85
+main.cpp
+scatterdata.cpp
+scatterdata.h
+../contour/contourstruct.h
+../matrix/matrix.h

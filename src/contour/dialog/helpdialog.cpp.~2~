@@ -1,0 +1,16 @@
+#include "helpdialog.h"
+
+HelpDialog::HelpDialog( QWidget * parent/* = 0*/, Qt::WindowFlags f /*= 0*/)  
+{
+     setupUi(this);
+}
+
+HelpDialog::~HelpDialog()
+{
+
+}
+
+void HelpDialog::showHtml()
+{
+
+}

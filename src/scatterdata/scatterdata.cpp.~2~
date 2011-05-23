@@ -1,0 +1,182 @@
+#include "scatterdata.h"
+#include <cstdlib>
+#include <fstream>
+
+ScatterData::ScatterData()
+{
+  slipH = slipV =100;//默认的网格数为100
+}
+
+ScatterData::ScatterData(Matrix &data)
+{
+  slipH = slipV =100;//默认的网格数为100
+  setScatterData(data);
+}
+
+ScatterData::~ScatterData()
+{
+
+}
+
+
+void ScatterData::setScatterData(Matrix &data)
+{
+  /*
+    adsfadsfdas sadfasdf sdafdsafsda asdfdsaf saf adsfasdf dsfas dsafasd 
+    dsafas: dsaf dsfas fdasf	
+  */
+  // sadf
+
+
+  scatterData = &data;
+  minX = maxX = data[0][0];	
+  minY = maxY = data[0][1];	
+  minZ = maxZ = data[0][2];
+  //找出离散数据中的最大最小值
+  for(int i=0;i<data.getRowCount();i++){ 
+    if(minX > data[i][0])
+      minX = data[i][0];
+    else if(data[i][0]>maxX)
+      maxX = data[i][0];
+
+    if(minY > data[i][1])
+      minY = data[i][1];
+    else if(maxY < data[i][1])
+      maxY = data[i][1];
+
+    if(minZ > data[i][2])	
+      minZ = data[i][2];
+    else if(maxZ < data[i][2])
+      maxZ = data[i][2];
+  }
+  width = maxX -minX;
+  height = maxY - minY;
+    
+  /*适当的调整范围*/
+  minX = minX - width/100;
+  maxX = maxX + width/100;
+  minY = minY - height/100;
+  maxY = maxY + height/100;
+  width = maxX -minX;
+  height = maxY - minY;
+}
+
+void ScatterData::setGridding(int horizontal,int vertical)
+{
+  slipH = horizontal;
+  slipV = vertical;
+}
+
+Matrix& ScatterData::getGridding(double &pminX,double &pmaxX,double &pminY,double &pmaxY)
+{
+
+  Matrix X((*scatterData).getRowCount(),10);
+  Matrix Z((*scatterData).getRowCount(),1);
+  griddingData =  new Matrix(slipH+1,slipV+1);
+
+  float x,y;
+  for(int i=0;i<(*scatterData).getRowCount();i++)
+    {
+      x = (*scatterData)[i][0];
+      y = (*scatterData)[i][1];
+      Z[i][0] = (*scatterData)[i][2];
+
+      X[i][0]=1; 
+      X[i][1]= x;
+      X[i][2]=y;
+      X[i][3]=x*x;
+      X[i][4]=x*y;
+      X[i][5]=y*y;
+      X[i][6]=X[i][3]*x;
+      X[i][7]=X[i][3]*y;
+      X[i][8]=x*X[i][5];
+      X[i][9]=X[i][5]*y;
+    }
+//   qDebug()<<X.toString().data();
+//   qDebug()<<Z.toString().data();
+  //得到参数矩阵
+  Matrix A = ((X.T()*X).inv())*(X.T())*Z;
+  // qDebug()<<A.toString().data();
+  float stepX = width/slipH;
+  float stepY = height/slipV;
+  for(int i=0;i<(*scatterData).getRowCount();i++)
+    {
+      x = (*scatterData)[i][0];
+      y = (*scatterData)[i][1];
+      double z = (*scatterData)[i][2];
+      double ww  = A[0][0] + A[1][0]*x + A[2][0]*y + A[3][0]*x*x
+	+ A[4][0]*x*y + A[5][0]*y*y + A[6][0]*x*x*x +A[7][0]*x*x*y
+	+ A[8][0]*x*y*y + A[9][0]*y*y*y;
+    }
+
+  for(int i=0;i<(*griddingData).getRowCount();i++)
+    for(int j=0;j<(*griddingData).getColCount();j++)
+      {
+	x = minX + i*stepX;
+	y = minY + j*stepY;
+	(*griddingData)[i][j] = A[0][0] + A[1][0]*x + A[2][0]*y + A[3][0]*x*x
+	  + A[4][0]*x*y + A[5][0]*y*y + A[6][0]*x*x*x +A[7][0]*x*x*y
+	  + A[8][0]*x*y*y + A[9][0]*y*y*y;
+	double ww =  (*griddingData)[i][j];
+      }
+  pminX = this->minX;
+  pmaxX = this->maxX;
+  pminY = this->minY;
+  pmaxY = this->maxY;
+
+  return (*griddingData);
+}
+
+Matrix& ScatterData::getGridding()
+{
+  double a,b,c,d;
+  return getGridding(a,b,c,d);
+}
+
+
+void ScatterData::getRange(double &pminX,double &pmaxX,double &pminY,double &pmaxY)
+{
+  pminX = this->minX;
+  pmaxX = this->maxX;
+  pminY = this->minY;
+  pmaxY = this->maxY;
+}
+
+
+Matrix& ScatterData::randScatterData(double pminX,double pmaxX,double pminY,double pmaxY,
+				     double pminZ,double pmaxZ ,int n)
+{
+//  srand(time(NULL));
+  Matrix &tmatrix = *(new Matrix(n,3));
+  for(int i=0;i<n;i++)
+    { 
+      tmatrix[i][0] = pminX + rand()/(float)RAND_MAX*(pmaxX - pminX);
+      tmatrix[i][1] = pminY + rand()/(float)RAND_MAX*(pmaxY - pminY);
+      tmatrix[i][2] = pminZ + rand()/(float)RAND_MAX*(pmaxZ - pminZ);
+    }
+  return tmatrix; 
+}
+
+void ScatterData::toFile(std::string name)
+{
+  std::ofstream file(name.c_str());
+  if(!file){
+    std::cerr<<"can not open file:"<<name<<" for writting.";
+  }
+  file<<"DSAA\n";
+  file<<(*griddingData).getColCount()<<" "<<(*griddingData).getRowCount()<<"\n";
+  file<<minX<<" "<<maxX<<"\n";
+  file<<minY<<" "<<maxY<<"\n";
+  file<<minZ<<" "<<maxZ<<"\n";
+  int n=1;
+  for(int i=0;i<griddingData->getColCount();i++)
+    for(int j=0;j<griddingData->getRowCount();j++,n++)
+      {
+	file<<(*griddingData)[i][j]<<" ";
+	if(n%10 == 0)
+	  file<<"\n";
+      }
+}
+
+
+

@@ -1,0 +1,88 @@
+#include "tracesetdialog.h"
+
+TraceDialog::TraceDialog( QWidget * parent /*= 0*/, Qt::WindowFlags f/* = 0*/)
+     :QDialog(parent,f)
+{
+     setupUi(this);
+     _buttonGroup = new QButtonGroup;
+     _buttonGroup->addButton(numberRadio);
+     _buttonGroup->addButton(stepRadio);
+
+     valueWidget->setSortingEnabled(true);
+     connect(getButton,SIGNAL(pressed()),this,SLOT(getList()));
+     connect(defaultButton,SIGNAL(pressed()),this,SLOT(toDefault()));
+     connect(addButton,SIGNAL(pressed()),this,SLOT(addValue()));
+     connect(removeButton,SIGNAL(pressed()),this,SLOT(removeValue()));
+}
+  
+TraceDialog::~TraceDialog()
+{
+
+}
+
+void TraceDialog::setTraceValue(QVector<float> &valueList)
+{
+     QListWidgetItem *item;
+     for(int i=0;i<valueList.count();i++)
+     {
+	  item = new QListWidgetItem(QString::number(valueList[i]),valueWidget);
+	  item->setFlags(Qt::ItemIsEditable |Qt::ItemIsSelectable);
+	  valueWidget->addItem(item);
+     }
+}
+
+QVector<float> TraceDialog::getTraceValue()
+{
+     QVector<float> valueList;
+     for(int i=0;i<valueWidget->count();i++)
+     {
+	  valueList<<valueWidget->item(i)->text().toDouble();
+     }
+     return valueList;
+}
+
+void TraceDialog::setDefault(float min,float max,int number)
+{
+     _defMin = min;
+     _defMax = max;
+     _defNum = number;
+}
+
+void TraceDialog::addValue()
+{
+     QListWidgetItem *item;
+     item->setFlags(Qt::ItemIsEditable |Qt::ItemIsSelectable);
+     valueWidget->insertItem(valueWidget->count(),item);
+     valueWidget->editItem(item);
+}
+
+void TraceDialog::removeValue()
+{
+     QListWidgetItem *item = valueWidget->currentItem();
+     if(item != NULL)
+	  valueWidget->removeItemWidget(item);
+}
+
+void TraceDialog::toDefault()
+{
+     startEdit->setText(QString::number(_defMin));
+     endEdit->setText(QString::number(_defMax));
+     stepEdit->setText(QString::number(_defNum));
+     numberRadio->setChecked(true);
+}
+
+void TraceDialog::getList()
+{
+     float start = startEdit->text().toDouble();
+     float end = endEdit->text().toDouble();
+     float step;
+     if(numberRadio->isChecked())
+	  step = (end - start)/stepEdit->text().toInt();
+     else 
+	  step = stepEdit->text().toDouble();
+     while(start < end)
+     {
+	  valueWidget->addItem(QString::number(start));
+	  start += step;
+     }
+}

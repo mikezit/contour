@@ -1,0 +1,23 @@
+#include "helpdialog.h"
+#include <QProcess>
+
+HelpDialog::HelpDialog( QWidget * parent/* = 0*/, Qt::WindowFlags f /*= 0*/)  
+{
+     setupUi(this);
+     connect(htmlButton,SIGNAL(clicked()),this,SLOT(showHtml()));
+}
+
+HelpDialog::~HelpDialog()
+{
+
+}
+
+void HelpDialog::showHtml()
+{
+     QStringList list;
+     list<<"http://blog.csdn.net/jianjun365222";
+#ifndef WIN32
+     QProcess::execute( "mozilla",  list);
+     return;
+#endif
+}

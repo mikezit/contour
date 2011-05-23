@@ -1,0 +1,56 @@
+
+2DMemAllocator.cpp,275
+C2DMemAllocator::C2DMemAllocator()C2DMemAllocator5,54
+C2DMemAllocator::~C2DMemAllocator()~C2DMemAllocator10,100
+void C2DMemAllocator::FreeMemory2D(float **&pp)FreeMemory2D15,147
+bool C2DMemAllocator::AllocMemory2D(float ** &p,int rows,int columns)AllocMemory2D30,356
+
+2DMemAllocator.h,96
+#define C2DMEMALLOCATOR_HC2DMEMALLOCATOR_H2,27
+class C2DMemAllocator  C2DMemAllocator15,385
+
+main.cpp,43
+int main(int argc, char *argv[])main5,73
+
+Makefile,753
+MAKEFILE      = MakefileMAKEFILE12,559
+QMAKE         = /usr/bin/qmakeQMAKE13,584
+DEL_FILE      = rm -fDEL_FILE14,615
+CHK_DIR_EXISTS= test -dCHK_DIR_EXISTS15,637
+MKDIR         = mkdir -pMKDIR16,661
+COPY          = cp -fCOPY17,686
+COPY_FILE     = $(COPY)COPY_FILE18,708
+COPY_DIR      = $(COPY) -rCOPY_DIR19,732
+INSTALL_FILE  = install -m 644 -pINSTALL_FILE20,759
+INSTALL_PROGRAM = install -m 755 -pINSTALL_PROGRAM21,793
+INSTALL_DIR   = $(COPY_DIR)INSTALL_DIR22,829
+DEL_FILE      = rm -fDEL_FILE23,857
+SYMLINK       = ln -sfSYMLINK24,879
+DEL_DIR       = rmdirDEL_DIR25,902
+MOVE          = mv -fMOVE26,924
+CHK_DIR_EXISTS= test -dCHK_DIR_EXISTS27,946
+MKDIR         = mkdir -pMKDIR28,970
+SUBTARGETS    =  \SUBTARGETS29,995
+
+matrix.cpp,645
+Matrix::Matrix(int rows,int cols,float num/*=0*/)Matrix10,156
+Matrix::Matrix(const Matrix &m)Matrix21,444
+Matrix::Matrix()Matrix34,739
+Matrix::~Matrix()~Matrix39,782
+Matrix& Matrix::T()T45,852
+void Matrix::changeRow(int row1,int row2)changeRow58,1054
+Matrix& Matrix::upperTriangle(int &numOfChangeRows/*=0*/)upperTriangle64,1181
+Matrix& Matrix::operator+(const Matrix &m)operator +99,1855
+Matrix& Matrix::operator-(const Matrix &m)operator -111,2160
+Matrix& Matrix::operator*(const Matrix &m)operator *122,2457
+float * Matrix::operator[](int row) constoperator []136,2793
+std::string  Matrix::toString() toString141,2866
+
+matrix.h,286
+#define MATRIX_HMATRIX_H2,18
+class Matrix Matrix13,144
+	inline int getRowCount()const {getRowCount27,358
+	inline int getColCount()const {getColCount31,414
+	float** matrix;//矩阵数据matrix61,993
+	int rows,cols;//矩阵行列数rows62,1021
+	int rows,cols;//矩阵行列数cols62,1021

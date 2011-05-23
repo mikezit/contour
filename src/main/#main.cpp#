@@ -1,0 +1,17 @@
+struct china
+{
+     int a;
+     int b;
+     float c;
+};
+
+int main()
+{
+     china aa;
+     aa.c;
+
+  int a = 2;
+  int b= 4;
+  int c = a*b;
+  return c;
+}

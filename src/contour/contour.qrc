@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/contour" >
+        <file>Resources/good.bmp</file>
+    </qresource>
+</RCC>

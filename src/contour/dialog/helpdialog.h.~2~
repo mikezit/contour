@@ -1,0 +1,13 @@
+#ifndef HELPDIALOG_H
+#define HELPDIALOG_H
+
+#include <QDialog>
+
+class HELPDIALOG : public QDialog
+{
+
+
+
+}
+
+#endif
